@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SDOSAlamofire_Example' do
+  pod 'SDOSAlamofire', :path => '../'
+
+  target 'SDOSAlamofire_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
