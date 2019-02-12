@@ -7,31 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4117D0BFB4A996C470CE46A6 /* Pods_SDOSAlamofire_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A50C42D50D7D312BD8033506 /* Pods_SDOSAlamofire_Example.framework */; };
-		5C51ABEDA0D447A784E38267 /* Pods_SDOSAlamofire_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B5DE404D5DC5EE1CEB3DAA /* Pods_SDOSAlamofire_Tests.framework */; };
+		5C4BBDAC220C22C200337368 /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4BBDAB220C22C200337368 /* UserDTO.swift */; };
+		5C4BBDB1220C23A700337368 /* Error0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5C4BBDAF220C23A700337368 /* Error0.txt */; };
+		5C4BBDB2220C23A700337368 /* Example0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5C4BBDB0220C23A700337368 /* Example0.txt */; };
+		5C4BBDB5220C256600337368 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4BBDB4220C256600337368 /* Mock.swift */; };
+		5C4BBDBB220C274600337368 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4BBDBA220C274600337368 /* Constants.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		9BB913B6FD58381769FA0952 /* Pods_SDOSAlamofire_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC28F7B709656C264C36DFB /* Pods_SDOSAlamofire_Example.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
-			remoteInfo = SDOSAlamofire;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		039C0E3FAD507E11F458577C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		2957E7B8B70696F892D9226B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		2E1F741C416C05677EE607E0 /* Pods-SDOSAlamofire_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDOSAlamofire_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDOSAlamofire_Tests/Pods-SDOSAlamofire_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		42B5DE404D5DC5EE1CEB3DAA /* Pods_SDOSAlamofire_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDOSAlamofire_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		039C0E3FAD507E11F458577C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2957E7B8B70696F892D9226B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5C4BBDAB220C22C200337368 /* UserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
+		5C4BBDAF220C23A700337368 /* Error0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Error0.txt; sourceTree = "<group>"; };
+		5C4BBDB0220C23A700337368 /* Example0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Example0.txt; sourceTree = "<group>"; };
+		5C4BBDB4220C256600337368 /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
+		5C4BBDB6220C25D000337368 /* SDOSAlamofire_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDOSAlamofire_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		5C4BBDBA220C274600337368 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SDOSAlamofire_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDOSAlamofire_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,14 +36,10 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* SDOSAlamofire_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDOSAlamofire_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		9EF19D08AF3B68E5ACC053A2 /* Pods-SDOSAlamofire_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDOSAlamofire_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDOSAlamofire_Example/Pods-SDOSAlamofire_Example.release.xcconfig"; sourceTree = "<group>"; };
-		A50C42D50D7D312BD8033506 /* Pods_SDOSAlamofire_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDOSAlamofire_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B59DA13A48479C0E4AFE26CA /* Pods-SDOSAlamofire_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDOSAlamofire_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDOSAlamofire_Tests/Pods-SDOSAlamofire_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		EEF74DF358C1D5967F8EF039 /* SDOSAlamofire.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SDOSAlamofire.podspec; path = ../SDOSAlamofire.podspec; sourceTree = "<group>"; };
-		FA6A9F8B7265EE594E5D757D /* Pods-SDOSAlamofire_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDOSAlamofire_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDOSAlamofire_Example/Pods-SDOSAlamofire_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		706A48114DC0AAC639A75053 /* Pods-SDOSAlamofire_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDOSAlamofire_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDOSAlamofire_Example/Pods-SDOSAlamofire_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		DDC28F7B709656C264C36DFB /* Pods_SDOSAlamofire_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDOSAlamofire_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEF74DF358C1D5967F8EF039 /* SDOSAlamofire.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SDOSAlamofire.podspec; path = ../SDOSAlamofire.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FAB30A8D07260F57A8B632CC /* Pods-SDOSAlamofire_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDOSAlamofire_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDOSAlamofire_Example/Pods-SDOSAlamofire_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,39 +47,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4117D0BFB4A996C470CE46A6 /* Pods_SDOSAlamofire_Example.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		607FACE21AFB9204008FA782 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5C51ABEDA0D447A784E38267 /* Pods_SDOSAlamofire_Tests.framework in Frameworks */,
+				9BB913B6FD58381769FA0952 /* Pods_SDOSAlamofire_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		241D801E1A09E860D1A97037 /* Pods */ = {
+		5C0B794A22117C1300969C30 /* DTO */ = {
 			isa = PBXGroup;
 			children = (
-				FA6A9F8B7265EE594E5D757D /* Pods-SDOSAlamofire_Example.debug.xcconfig */,
-				9EF19D08AF3B68E5ACC053A2 /* Pods-SDOSAlamofire_Example.release.xcconfig */,
-				B59DA13A48479C0E4AFE26CA /* Pods-SDOSAlamofire_Tests.debug.xcconfig */,
-				2E1F741C416C05677EE607E0 /* Pods-SDOSAlamofire_Tests.release.xcconfig */,
+				5C4BBDAB220C22C200337368 /* UserDTO.swift */,
 			);
-			name = Pods;
+			path = DTO;
 			sourceTree = "<group>";
 		};
-		2A46098778E12F4D5CD5950B /* Frameworks */ = {
+		5C4BBDAD220C239200337368 /* Others */ = {
 			isa = PBXGroup;
 			children = (
-				A50C42D50D7D312BD8033506 /* Pods_SDOSAlamofire_Example.framework */,
-				42B5DE404D5DC5EE1CEB3DAA /* Pods_SDOSAlamofire_Tests.framework */,
+				5C4BBDBA220C274600337368 /* Constants.swift */,
+				5C4BBDAE220C239A00337368 /* Resources */,
 			);
-			name = Frameworks;
+			name = Others;
+			sourceTree = "<group>";
+		};
+		5C4BBDAE220C239A00337368 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5C4BBDAF220C23A700337368 /* Error0.txt */,
+				5C4BBDB0220C23A700337368 /* Example0.txt */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5C4BBDB3220C251C00337368 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				5C4BBDB4220C256600337368 /* Mock.swift */,
+			);
+			name = Mock;
 			sourceTree = "<group>";
 		};
 		607FACC71AFB9204008FA782 = {
@@ -94,10 +93,9 @@
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for SDOSAlamofire */,
-				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				241D801E1A09E860D1A97037 /* Pods */,
-				2A46098778E12F4D5CD5950B /* Frameworks */,
+				BF3DC74CD3D60D1B732706F3 /* Pods */,
+				B739ECEFCE06CA6424B1C877 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,7 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				607FACD01AFB9204008FA782 /* SDOSAlamofire_Example.app */,
-				607FACE51AFB9204008FA782 /* SDOSAlamofire_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,12 +110,16 @@
 		607FACD21AFB9204008FA782 /* Example for SDOSAlamofire */ = {
 			isa = PBXGroup;
 			children = (
+				5C0B794A22117C1300969C30 /* DTO */,
+				5C4BBDB3220C251C00337368 /* Mock */,
+				5C4BBDAD220C239200337368 /* Others */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				5C4BBDB6220C25D000337368 /* SDOSAlamofire_Example-Bridging-Header.h */,
 			);
 			name = "Example for SDOSAlamofire";
 			path = SDOSAlamofire;
@@ -128,23 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				607FACD41AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		607FACE81AFB9204008FA782 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
-				607FACE91AFB9204008FA782 /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		607FACE91AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEA1AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -159,6 +143,23 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		B739ECEFCE06CA6424B1C877 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDC28F7B709656C264C36DFB /* Pods_SDOSAlamofire_Example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF3DC74CD3D60D1B732706F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				706A48114DC0AAC639A75053 /* Pods-SDOSAlamofire_Example.debug.xcconfig */,
+				FAB30A8D07260F57A8B632CC /* Pods-SDOSAlamofire_Example.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,11 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "SDOSAlamofire_Example" */;
 			buildPhases = (
-				43134FAB72695BB36D9BCA4B /* [CP] Check Pods Manifest.lock */,
+				B9F01E979096E7FAE87185B8 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				8A041A24BA73CC0C3D73B0AC /* [CP] Embed Pods Frameworks */,
+				C65033DFC283ED9558444580 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,25 +181,6 @@
 			productName = SDOSAlamofire;
 			productReference = 607FACD01AFB9204008FA782 /* SDOSAlamofire_Example.app */;
 			productType = "com.apple.product-type.application";
-		};
-		607FACE41AFB9204008FA782 /* SDOSAlamofire_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "SDOSAlamofire_Tests" */;
-			buildPhases = (
-				6EE4B25A3FFAE92291965D7D /* [CP] Check Pods Manifest.lock */,
-				607FACE11AFB9204008FA782 /* Sources */,
-				607FACE21AFB9204008FA782 /* Frameworks */,
-				607FACE31AFB9204008FA782 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
-			);
-			name = SDOSAlamofire_Tests;
-			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* SDOSAlamofire_Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -212,12 +194,9 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
-					607FACE41AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-						TestTargetID = 607FACCF1AFB9204008FA782;
+						DevelopmentTeam = Y5G9RYLF8Y;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -235,7 +214,6 @@
 			projectRoot = "";
 			targets = (
 				607FACCF1AFB9204008FA782 /* SDOSAlamofire_Example */,
-				607FACE41AFB9204008FA782 /* SDOSAlamofire_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -246,22 +224,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				5C4BBDB2220C23A700337368 /* Example0.txt in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				5C4BBDB1220C23A700337368 /* Error0.txt in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		607FACE31AFB9204008FA782 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		43134FAB72695BB36D9BCA4B /* [CP] Check Pods Manifest.lock */ = {
+		B9F01E979096E7FAE87185B8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -283,29 +256,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6EE4B25A3FFAE92291965D7D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SDOSAlamofire_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8A041A24BA73CC0C3D73B0AC /* [CP] Embed Pods Frameworks */ = {
+		C65033DFC283ED9558444580 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -314,12 +265,18 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SDOSAlamofire_Example/Pods-SDOSAlamofire_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/KeyedCodable/KeyedCodable.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
 				"${BUILT_PRODUCTS_DIR}/SDOSAlamofire/SDOSAlamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeyedCodable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDOSAlamofire.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,28 +291,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C4BBDBB220C274600337368 /* Constants.swift in Sources */,
+				5C4BBDAC220C22C200337368 /* UserDTO.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		607FACE11AFB9204008FA782 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				5C4BBDB5220C256600337368 /* Mock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* SDOSAlamofire_Example */;
-			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
@@ -422,7 +366,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -468,7 +412,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -478,14 +422,20 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA6A9F8B7265EE594E5D757D /* Pods-SDOSAlamofire_Example.debug.xcconfig */;
+			baseConfigurationReference = 706A48114DC0AAC639A75053 /* Pods-SDOSAlamofire_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Y5G9RYLF8Y;
 				INFOPLIST_FILE = SDOSAlamofire/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = es.sdos.sdosalamofire.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "DEV Generic";
+				SWIFT_OBJC_BRIDGING_HEADER = "SDOSAlamofire/SDOSAlamofire_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -493,56 +443,21 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9EF19D08AF3B68E5ACC053A2 /* Pods-SDOSAlamofire_Example.release.xcconfig */;
+			baseConfigurationReference = FAB30A8D07260F57A8B632CC /* Pods-SDOSAlamofire_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SDOSAlamofire/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = es.sdos.sdosalamofire.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SDOSAlamofire/SDOSAlamofire_Example-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		607FACF31AFB9204008FA782 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B59DA13A48479C0E4AFE26CA /* Pods-SDOSAlamofire_Tests.debug.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SDOSAlamofire_Example.app/SDOSAlamofire_Example";
-			};
-			name = Debug;
-		};
-		607FACF41AFB9204008FA782 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E1F741C416C05677EE607E0 /* Pods-SDOSAlamofire_Tests.release.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SDOSAlamofire_Example.app/SDOSAlamofire_Example";
 			};
 			name = Release;
 		};
@@ -563,15 +478,6 @@
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
 				607FACF11AFB9204008FA782 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "SDOSAlamofire_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				607FACF31AFB9204008FA782 /* Debug */,
-				607FACF41AFB9204008FA782 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

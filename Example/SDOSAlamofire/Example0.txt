@@ -1,0 +1,8 @@
+{
+    "codigo" : "EJEMPLO0(A)",
+    "nombre" : "Alberto Alfaro",
+    "fechas" : {
+        "nacimiento" : "18/10/1981",
+        "inscripcion" : "29/10/2016 10:20:12"
+    }
+}

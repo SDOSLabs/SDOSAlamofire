@@ -1,0 +1,6 @@
+{
+    "error" : {
+        "codError" : "10",
+        "descripcion" : "OK"
+    }
+}
