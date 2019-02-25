@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
     spec.authors      = 'SDOS'
     spec.version      = @version
     spec.license      = { :type => 'SDOS License' }
-    spec.homepage     = 'https://svrgitpub.sdos.es/antonioj.pallares/SDOSAlamofire'
+    spec.homepage     = 'https://svrgitpub.sdos.es/iOS/SDOSAlamofire'
     spec.summary      = 'Librería de integración con Alamofire'
     spec.source       = { :git => "https://svrgitpub.sdos.es/antonioj.pallares/SDOSAlamofire", :tag => "v#{spec.version}" }
     spec.framework    = ['Foundation', 'UIKit']
@@ -13,8 +13,8 @@ Pod::Spec.new do |spec|
 
     spec.subspec 'src' do |s1|
         s1.preserve_paths = 'src/Classes/*'
-        s1.source_files = ['src/Classes/*{*.m,*.h,*.swift}', 'src/Classes/**/*{*.m,*.h,*.swift}']
+        s1.source_files = ['src/Classes/*{*.swift}', 'src/Classes/**/*{*.swift}']
     end
-    spec.dependency 'Alamofire', '5.0.0-beta.1'
-    spec.dependency 'KeyedCodable'
+    spec.dependency 'Alamofire', '5.0.0-beta.2'
+    spec.dependency 'SDOSKeyedCodable', '~> 1.0.0'
 end

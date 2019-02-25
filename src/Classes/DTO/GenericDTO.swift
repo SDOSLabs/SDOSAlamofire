@@ -7,16 +7,9 @@
 
 import KeyedCodable
 
-public protocol GenericDTO: Decodable, Keyedable { }
-public protocol GenericErrorDTO: GenericDTO & Error {
-    
-//    var code: Int { get }
-//    func isError() -> Bool
+public protocol GenericDTO: Decodable, Keyedable
+public protocol GenericErrorDTO: GenericDTO & Error
+public protocol LegacyErrorDTO: GenericErrorDTO {
+    func isError() -> Bool
 }
 
-//extension GenericErrorDTO {
-//
-//    func isError() {
-//        return code != 0
-//    }
-//}

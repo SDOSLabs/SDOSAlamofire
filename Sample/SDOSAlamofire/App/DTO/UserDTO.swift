@@ -24,8 +24,8 @@ struct UserDTO: GenericDTO {
         try signUpDatetime <-> map["fechas.inscripcion"]
     }
     
-//    init(from decoder: Decoder) throws {
-//        try KeyedDecoder(with: decoder).decode(to: &self)
-//    }
+    init(from decoder: Decoder) throws {
+        try KeyedDecoder(with: decoder).decode(to: &self)
+    }
 
 }

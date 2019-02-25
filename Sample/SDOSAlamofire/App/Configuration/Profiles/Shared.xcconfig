@@ -1,0 +1,11 @@
+//
+//  App.debug.xcconfig
+//  SDOSKeyedCodable
+//
+//  Created by Antonio Jesús Pallares on 13/02/2019.
+//  Copyright © 2019 SDOS. All rights reserved.
+//
+
+//Aplicación
+APP_NAME = SDOSAlamofire
+BASE_PRODUCT_PACKAGE_NAME = es.sdos.sdosalamofire
