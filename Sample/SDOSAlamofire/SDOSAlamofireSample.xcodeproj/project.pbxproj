@@ -13,12 +13,13 @@
 		5C4BBDB2220C23A700337368 /* Example0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5C4BBDB0220C23A700337368 /* Example0.txt */; };
 		5C4BBDB5220C256600337368 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4BBDB4220C256600337368 /* Mock.swift */; };
 		5C4BBDBB220C274600337368 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4BBDBA220C274600337368 /* Constants.swift */; };
+		5CCCB7CF2225975200F5DBD5 /* ResponseErrorDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCCB7CE2225975200F5DBD5 /* ResponseErrorDTO.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		D7BBA0A7827FB7A450209341 /* Pods_SDOSAlamofireSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6917474EE16C4B7CC0F00300 /* Pods_SDOSAlamofireSample.framework */; };
+		C6DE5A81A1DFE67E12754051 /* Pods_SDOSAlamofireSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6917474EE16C4B7CC0F00300 /* Pods_SDOSAlamofireSample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +31,9 @@
 		5C4BBDAF220C23A700337368 /* Error0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Error0.txt; sourceTree = "<group>"; };
 		5C4BBDB0220C23A700337368 /* Example0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Example0.txt; sourceTree = "<group>"; };
 		5C4BBDB4220C256600337368 /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
-		5C4BBDB6220C25D000337368 /* SDOSAlamofire_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDOSAlamofire_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		5C4BBDB6220C25D000337368 /* SDOSAlamofireSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDOSAlamofireSample-Bridging-Header.h"; sourceTree = "<group>"; };
 		5C4BBDBA220C274600337368 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5CCCB7CE2225975200F5DBD5 /* ResponseErrorDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseErrorDTO.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SDOSAlamofireSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDOSAlamofireSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7BBA0A7827FB7A450209341 /* Pods_SDOSAlamofireSample.framework in Frameworks */,
+				C6DE5A81A1DFE67E12754051 /* Pods_SDOSAlamofireSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				5C4BBDAB220C22C200337368 /* UserDTO.swift */,
+				5CCCB7CE2225975200F5DBD5 /* ResponseErrorDTO.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -170,7 +173,7 @@
 				5C4BBDAD220C239200337368 /* Other */,
 				5C0FB1612223D76000F4D291 /* Controllers */,
 				607FACD31AFB9204008FA782 /* Configuration */,
-				5C4BBDB6220C25D000337368 /* SDOSAlamofire_Example-Bridging-Header.h */,
+				5C4BBDB6220C25D000337368 /* SDOSAlamofireSample-Bridging-Header.h */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -222,7 +225,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = CocoaPods;
+				ORGANIZATIONNAME = SDOS;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -325,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C4BBDBB220C274600337368 /* Constants.swift in Sources */,
+				5CCCB7CF2225975200F5DBD5 /* ResponseErrorDTO.swift in Sources */,
 				5C4BBDAC220C22C200337368 /* UserDTO.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
@@ -469,7 +473,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = es.sdos.sdosalamofire.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "DEV Generic";
-				SWIFT_OBJC_BRIDGING_HEADER = "SDOSAlamofire/SDOSAlamofire_Example-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "App/SDOSAlamofireSample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -490,7 +494,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = es.sdos.sdosalamofire.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "SDOSAlamofire/SDOSAlamofire_Example-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "App/SDOSAlamofireSample-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};

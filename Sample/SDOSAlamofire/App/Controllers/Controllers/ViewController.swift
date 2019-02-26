@@ -3,10 +3,11 @@
 //  SDOSAlamofire
 //
 //  Created by Antonio Jesús Pallares on 02/07/2019.
-//  Copyright (c) 2019 Antonio Jesús Pallares. All rights reserved.
+//  Copyright © 2019 SDOS. All rights reserved.
 //
 
 import UIKit
+import SDOSAlamofire
 import Alamofire
 
 class ViewController: UIViewController {
@@ -24,10 +25,13 @@ class ViewController: UIViewController {
     }
     
     func makeWSCall() {
-        AF.request(Constants.WS.wsUserURL, method: .get, parameters: nil).validate().responseDecodable { (response: DataResponse<UserDTO>) in
+        let responseSerializer = SDOSJSONResponseSerializer<UserDTO, ResponseErrorDTO>(jsonErrorRootKey: "Error")
+        AF.request(Constants.WS.wsUserURL, method: .get, parameters: nil).validate().responseSDOSDecodable(responseSerializer: responseSerializer) { response in
             switch response.result {
             case .success(let user):
                 print("Success with user: \(user)")
+            case .failure(let error as ResponseErrorDTO):
+                print("Failure with response error: \(error)")
             case .failure(let error):
                 print("Failure with error: \(error)")
             }

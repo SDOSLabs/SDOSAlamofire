@@ -3,7 +3,7 @@
 //  SDOSAlamofire
 //
 //  Created by Antonio Jesús Pallares on 02/07/2019.
-//  Copyright (c) 2019 Antonio Jesús Pallares. All rights reserved.
+//  Copyright © 2019 SDOS. All rights reserved.
 //
 
 import UIKit

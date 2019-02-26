@@ -1,9 +1,9 @@
 //
 //  Mock.swift
-//  SDOSAlamofire_Example
+//  SDOSAlamofireSample
 //
 //  Created by Antonio Jesús Pallares on 07/02/2019.
-//  Copyright © 2019 CocoaPods. All rights reserved.
+//  Copyright © 2019 SDOS. All rights reserved.
 //
 
 import Foundation
