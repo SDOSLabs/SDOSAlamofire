@@ -1,30 +1,21 @@
 //
-//  ViewController.swift
-//  SDOSAlamofire
+//  WS.swift
+//  SDOSAlamofireSample
 //
-//  Created by Antonio Jesús Pallares on 02/07/2019.
+//  Created by Antonio Jesús Pallares on 27/02/2019.
 //  Copyright © 2019 SDOS. All rights reserved.
 //
 
-import UIKit
+import Foundation
 import SDOSAlamofire
 import Alamofire
 
-class ViewController: UIViewController {
+typealias WSConfiguration = [ExampleSection]
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        makeWSCall()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+struct WS {
+    private init() { }
     
-    func makeWSCall() {
+    static func makeWSCall(configuration: WSConfiguration, completion: (_ textToShow: String) -> Void) {
         let responseSerializer = SDOSJSONResponseSerializer<UserDTO, ResponseErrorDTO>(jsonErrorRootKey: "Error")
         AF.request(Constants.WS.wsUserURL, method: .get, parameters: nil).validate().responseSDOSDecodable(responseSerializer: responseSerializer) { response in
             switch response.result {
@@ -37,6 +28,4 @@ class ViewController: UIViewController {
             }
         }
     }
-
 }
-

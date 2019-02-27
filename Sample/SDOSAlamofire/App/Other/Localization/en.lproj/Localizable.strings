@@ -1,0 +1,50 @@
+/* 
+  Localizable.strings
+  SDOSAlamofireSample
+
+  Created by Antonio Jesús Pallares on 26/02/2019.
+  Copyright © 2019 SDOS. All rights reserved.
+*/
+
+"SDOSAlamofireSample.version" = "Versión %@";
+"SDOSAlamofireSample.alertOkActionTitle" = "OK";
+"SDOSAlamofireSample.btn.seeExample" = "Ver ejemplo";
+
+"SDOSAlamofireSample.example.sectionTitle.json" = "Tipo de JSON";
+"SDOSAlamofireSample.example.sectionTitle.serializer" = "Tipo de serializer";
+"SDOSAlamofireSample.example.sectionTitle.jsonRoot" = "JSON root keys";
+"SDOSAlamofireSample.example.sectionTitle.responseCode" = "Respuesta";
+"SDOSAlamofireSample.example.sectionTitle.parse" = "Parseo de la respuesta";
+"SDOSAlamofireSample.example.cell.JSONType.correct" = "";
+"SDOSAlamofireSample.example.cell.JSONType.malformed" = "";
+"SDOSAlamofireSample.example.cell.SerializerType.JSONResponseSerializer" = "";
+"SDOSAlamofireSample.example.cell.SerializerType.HTTPErrorJSONResponseSerializer" = "";
+"SDOSAlamofireSample.example.cell.JSONRoot.some.response" = "";
+"SDOSAlamofireSample.example.cell.JSONRoot.none.response" = "";
+"SDOSAlamofireSample.example.cell.JSONRoot.some.error" = "";
+"SDOSAlamofireSample.example.cell.JSONRoot.none.error" = "";
+"SDOSAlamofireSample.example.cell.Result.success" = "";
+"SDOSAlamofireSample.example.cell.Result.failure" = "";
+"SDOSAlamofireSample.example.cell.ResponseObject.userDTO" = "";
+"SDOSAlamofireSample.example.cell.ErrorType.errorDTO" = "";
+
+"SDOSAlamofireSample.example.info.JSONType.correct.title" = "";
+"SDOSAlamofireSample.example.info.JSONType.correct.explanation" = "";
+"SDOSAlamofireSample.example.info.JSONType.malformed.title" = "";
+"SDOSAlamofireSample.example.info.JSONType.malformed.explanation" = "";
+"SDOSAlamofireSample.example.info.SerializerType.JSONResponseSerializer.title" = "";
+"SDOSAlamofireSample.example.info.SerializerType.JSONResponseSerializer.explanation" = "";
+"SDOSAlamofireSample.example.info.SerializerType.HTTPErrorJSONResponseSerializer.title" = "";
+"SDOSAlamofireSample.example.info.SerializerType.HTTPErrorJSONResponseSerializer.explanation" = "";
+"SDOSAlamofireSample.example.info.JSONRoot.some.title" = "";
+"SDOSAlamofireSample.example.info.JSONRoot.some.explanation" = "";
+"SDOSAlamofireSample.example.info.JSONRoot.none.title" = "";
+"SDOSAlamofireSample.example.info.JSONRoot.none.explanation" = "";
+"SDOSAlamofireSample.example.info.Result.success.title" = "";
+"SDOSAlamofireSample.example.info.Result.success.explanation" = "";
+"SDOSAlamofireSample.example.info.Result.failure.title" = "";
+"SDOSAlamofireSample.example.info.Result.failure.explanation" = "";
+"SDOSAlamofireSample.example.info.ResponseObject.userDTO.title" = "";
+"SDOSAlamofireSample.example.info.ResponseObject.userDTO.explanation" = "";
+"SDOSAlamofireSample.example.info.ErrorType.errorDTO.title" = "";
+"SDOSAlamofireSample.example.info.ErrorType.errorDTO.explanation" = "";
