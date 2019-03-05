@@ -8,16 +8,10 @@
 
 import Foundation
 
-func setupServiceMock() throws {
-    
-    let resourceName = "Example0"
-    guard let filepath = Bundle.main.path(forResource: resourceName, ofType: "txt") else {
-        throw NSError(domain: "Error de lectura de archivo de mock", code: 0, userInfo: nil)
-    }
-    let url = URL(fileURLWithPath: filepath)
-    let data = try Data(contentsOf: url)
-    let jsonString = try String(contentsOfFile: filepath)
+let kDefaultsJSONMalformedKey = "kDefaultsJSONMalformedKey"
+let kDefaultsJSONErrorCodeResponseKey = "kDefaultsJSONErrorCodeResponseKey"
 
+func setupServiceMock() throws {
     OHHTTPStubs.stubRequests(passingTest: { (request: URLRequest) -> Bool in
         guard
             let host = request.url?.host,
@@ -28,8 +22,23 @@ func setupServiceMock() throws {
         return hostToStub == host
     }) { _ -> OHHTTPStubsResponse in
         
-        let response = OHHTTPStubsResponse(data: data, statusCode: 200, headers: nil)
-        response.responseTime = TimeInterval.random(in: 2 ... 5)
+        let responseData: Data
+        if UserDefaults.standard.bool(forKey: kDefaultsJSONMalformedKey) {
+            responseData = JSON.malformedJSONData
+        } else {
+            responseData = JSON.correctJSONData
+        }
+        
+        let statusCode: Int32
+        if UserDefaults.standard.bool(forKey: kDefaultsJSONErrorCodeResponseKey) {
+            statusCode = 400
+        } else {
+            statusCode = 200
+        }
+        
+        
+        let response = OHHTTPStubsResponse(data: responseData, statusCode: statusCode, headers: nil)
+        response.responseTime = TimeInterval.random(in: 0.3 ... 2)
 
         return response
     }

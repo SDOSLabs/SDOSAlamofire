@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		5C0FB1692223D81D00F4D291 /* Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5C0FB1672223D81D00F4D291 /* Shared.xcconfig */; };
 		5C4BBDAC220C22C200337368 /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4BBDAB220C22C200337368 /* UserDTO.swift */; };
-		5C4BBDB1220C23A700337368 /* Error0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5C4BBDAF220C23A700337368 /* Error0.txt */; };
+		5C4BBDB1220C23A700337368 /* MalformedJSON.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5C4BBDAF220C23A700337368 /* MalformedJSON.txt */; };
 		5C4BBDB2220C23A700337368 /* Example0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5C4BBDB0220C23A700337368 /* Example0.txt */; };
 		5C4BBDB5220C256600337368 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4BBDB4220C256600337368 /* Mock.swift */; };
 		5C4BBDBB220C274600337368 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4BBDBA220C274600337368 /* Constants.swift */; };
-		5CCCB7CF2225975200F5DBD5 /* ResponseErrorDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCCB7CE2225975200F5DBD5 /* ResponseErrorDTO.swift */; };
+		5C5F53AE2229223B00DD51B9 /* LoggingViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5F53AA2229223B00DD51B9 /* LoggingViewManager.m */; };
+		5C5F53AF2229223B00DD51B9 /* MALoggingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5F53AD2229223B00DD51B9 /* MALoggingViewController.m */; };
+		5C6228B3222D188E00032572 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6228B2222D188E00032572 /* JSON.swift */; };
+		5CCCB7CF2225975200F5DBD5 /* ErrorDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCCB7CE2225975200F5DBD5 /* ErrorDTO.swift */; };
 		5CCCB7D12225A31600F5DBD5 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCCB7D02225A31500F5DBD5 /* InitialViewController.swift */; };
 		5CCCB7D62225A4F800F5DBD5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5CCCB7D82225A4F800F5DBD5 /* Localizable.strings */; };
 		5CCCB7DA2226704100F5DBD5 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCCB7D92226704100F5DBD5 /* InfoViewController.swift */; };
@@ -34,12 +37,17 @@
 		5C0FB1672223D81D00F4D291 /* Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		5C0FB16A2223D84D00F4D291 /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
 		5C4BBDAB220C22C200337368 /* UserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
-		5C4BBDAF220C23A700337368 /* Error0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Error0.txt; sourceTree = "<group>"; };
+		5C4BBDAF220C23A700337368 /* MalformedJSON.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MalformedJSON.txt; sourceTree = "<group>"; };
 		5C4BBDB0220C23A700337368 /* Example0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Example0.txt; sourceTree = "<group>"; };
 		5C4BBDB4220C256600337368 /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
 		5C4BBDB6220C25D000337368 /* SDOSAlamofireSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDOSAlamofireSample-Bridging-Header.h"; sourceTree = "<group>"; };
 		5C4BBDBA220C274600337368 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		5CCCB7CE2225975200F5DBD5 /* ResponseErrorDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseErrorDTO.swift; sourceTree = "<group>"; };
+		5C5F53AA2229223B00DD51B9 /* LoggingViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggingViewManager.m; sourceTree = "<group>"; };
+		5C5F53AB2229223B00DD51B9 /* MALoggingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MALoggingViewController.h; sourceTree = "<group>"; };
+		5C5F53AC2229223B00DD51B9 /* LoggingViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggingViewManager.h; sourceTree = "<group>"; };
+		5C5F53AD2229223B00DD51B9 /* MALoggingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MALoggingViewController.m; sourceTree = "<group>"; };
+		5C6228B2222D188E00032572 /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		5CCCB7CE2225975200F5DBD5 /* ErrorDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorDTO.swift; sourceTree = "<group>"; };
 		5CCCB7D02225A31500F5DBD5 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		5CCCB7D72225A4F800F5DBD5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5CCCB7D92226704100F5DBD5 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
@@ -82,7 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				5C4BBDAB220C22C200337368 /* UserDTO.swift */,
-				5CCCB7CE2225975200F5DBD5 /* ResponseErrorDTO.swift */,
+				5CCCB7CE2225975200F5DBD5 /* ErrorDTO.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -117,8 +125,9 @@
 		5C0FB1642223D7B800F4D291 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				5C4BBDAF220C23A700337368 /* Error0.txt */,
+				5C4BBDAF220C23A700337368 /* MalformedJSON.txt */,
 				5C4BBDB0220C23A700337368 /* Example0.txt */,
+				5C6228B2222D188E00032572 /* JSON.swift */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -135,6 +144,7 @@
 		5C4BBDAD220C239200337368 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				5C5F53A92229221500DD51B9 /* Libs */,
 				5CCCB7D22225A37E00F5DBD5 /* Constants */,
 				5CCCB7D32225A4CF00F5DBD5 /* Localization */,
 				5C4BBDAE220C239A00337368 /* Resources */,
@@ -158,6 +168,17 @@
 				5C4BBDB4220C256600337368 /* Mock.swift */,
 			);
 			path = Mock;
+			sourceTree = "<group>";
+		};
+		5C5F53A92229221500DD51B9 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				5C5F53AC2229223B00DD51B9 /* LoggingViewManager.h */,
+				5C5F53AA2229223B00DD51B9 /* LoggingViewManager.m */,
+				5C5F53AB2229223B00DD51B9 /* MALoggingViewController.h */,
+				5C5F53AD2229223B00DD51B9 /* MALoggingViewController.m */,
+			);
+			path = Libs;
 			sourceTree = "<group>";
 		};
 		5CCCB7D22225A37E00F5DBD5 /* Constants */ = {
@@ -312,7 +333,7 @@
 				5C4BBDB2220C23A700337368 /* Example0.txt in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				5CCCB7D62225A4F800F5DBD5 /* Localizable.strings in Resources */,
-				5C4BBDB1220C23A700337368 /* Error0.txt in Resources */,
+				5C4BBDB1220C23A700337368 /* MalformedJSON.txt in Resources */,
 				5C0FB1692223D81D00F4D291 /* Shared.xcconfig in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -379,16 +400,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C4BBDBB220C274600337368 /* Constants.swift in Sources */,
+				5C6228B3222D188E00032572 /* JSON.swift in Sources */,
 				5CCCB7E22226B2D400F5DBD5 /* InfoModel.swift in Sources */,
 				5CCCB7D12225A31600F5DBD5 /* InitialViewController.swift in Sources */,
 				5CCCB7DD2226752F00F5DBD5 /* ExampleModel.swift in Sources */,
 				5CCCB7E0222687CE00F5DBD5 /* WS.swift in Sources */,
-				5CCCB7CF2225975200F5DBD5 /* ResponseErrorDTO.swift in Sources */,
+				5CCCB7CF2225975200F5DBD5 /* ErrorDTO.swift in Sources */,
 				5C4BBDAC220C22C200337368 /* UserDTO.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ExampleViewController.swift in Sources */,
+				5C5F53AE2229223B00DD51B9 /* LoggingViewManager.m in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				5CCCB7DA2226704100F5DBD5 /* InfoViewController.swift in Sources */,
 				5C4BBDB5220C256600337368 /* Mock.swift in Sources */,
+				5C5F53AF2229223B00DD51B9 /* MALoggingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

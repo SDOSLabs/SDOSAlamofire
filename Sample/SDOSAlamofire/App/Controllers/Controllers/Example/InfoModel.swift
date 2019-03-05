@@ -18,7 +18,12 @@ extension JSONType {
         return titleLocalizedStringFor("JSONType", self.rawValue)
     }
     var infoExplanation: String {
-        return explanationLocalizedStringFor("JSONType", self.rawValue)
+        switch self {
+        case .correct:
+            return JSON.correctJSON
+        case .malformed:
+            return JSON.malformedJSON
+        }
     }
 }
 
@@ -33,10 +38,10 @@ extension SerializerType {
 
 extension JSONRoot {
     var infoTitle : String {
-        return titleLocalizedStringFor("JSONRoot", self.rawValue)
+        return titleLocalizedStringFor("JSONRoot")
     }
     var infoExplanation : String {
-        return explanationLocalizedStringFor("JSONRoot", self.rawValue)
+        return explanationLocalizedStringFor("JSONRoot")
     } 
 }
 
@@ -91,22 +96,22 @@ extension ExampleSection {
             explanation = type.infoExplanation
         case .jsonRoot(response: let response, error: let error):
             if index == 1 {
-                title = response.infoTitle
-                explanation = response.infoExplanation
-            } else {
                 title = error.infoTitle
                 explanation = error.infoExplanation
+            } else {
+                title = response.infoTitle
+                explanation = response.infoExplanation
             }
         case .responseCode(type: let type):
             title = type.infoTitle
             explanation = type.infoExplanation
         case .parse(response: let response, error: let error):
             if index == 1 {
-                title = response.infoTitle
-                explanation = response.infoExplanation
-            } else {
                 title = error.infoTitle
                 explanation = error.infoExplanation
+            } else {
+                title = response.infoTitle
+                explanation = response.infoExplanation
             }
         }
         return InfoModel(title: title, explanation: explanation)

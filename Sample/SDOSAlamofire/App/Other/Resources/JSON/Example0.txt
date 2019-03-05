@@ -1,8 +1,32 @@
 {
+    "error" : {
+        "codError" : 0,
+        "descripcion" : "OK"
+    },
+    "errors" : {
+        "codError" : 1,
+        "descripcion" : "Ha ocurrido un error"
+    },
     "codigo" : "EJEMPLO0(A)",
     "nombre" : "Alberto Alfaro",
     "fechas" : {
         "nacimiento" : "18/10/1981",
         "inscripcion" : "29/10/2016 10:20:12"
+    },
+    "respuesta" : {
+        "codigo" : "EJEMPLO0(B)",
+        "nombre" : "Benito Bueno",
+        "fechas" : {
+            "nacimiento" : "28/12/1984",
+            "inscripcion" : "10/10/2016 11:30:42"
+        }
+    },
+    "user" : {
+        "codigo" : "EJEMPLO0(C)",
+        "nombre" : "Carlos Curbera",
+        "fechas" : {
+            "nacimiento" : "02/02/1987",
+            "inscripcion" : "01/03/2017 13:22:01"
+        }
     }
 }

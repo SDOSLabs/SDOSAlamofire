@@ -3,3 +3,4 @@
 //
 
 #import <OHHTTPStubs/OHHTTPStubs.h>
+#import "LoggingViewManager.h"

@@ -1,5 +1,5 @@
 //
-//  ResponseErrorDTO.swift
+//  ErrorDTO.swift
 //  SDOSAlamofireSample
 //
 //  Created by Antonio Jesús Pallares on 26/02/2019.
@@ -10,7 +10,7 @@ import Foundation
 import SDOSAlamofire
 import SDOSKeyedCodable
 
-struct ResponseErrorDTO: GenericErrorDTO {
+struct ErrorDTO: GenericErrorDTO {
     var code: Int = 0
     var description: String?
     
@@ -21,5 +21,11 @@ struct ResponseErrorDTO: GenericErrorDTO {
     
     init(from decoder: Decoder) throws {
         try KeyedDecoder(with: decoder).decode(to: &self)
+    }
+}
+
+extension ErrorDTO: HTTPResponseErrorProtocol {
+    func isError() -> Bool {
+        return code != 0
     }
 }

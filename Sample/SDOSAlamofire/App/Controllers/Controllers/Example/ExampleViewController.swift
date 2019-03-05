@@ -45,10 +45,11 @@ class ExampleViewController: UIViewController {
     }
     
     @objc func makeWSCall(_ sender: Any?) {
+        LoggingViewManager.cleanLogView()
         loadActionButton(loading: true)
-        WS.makeWSCall(configuration: currentConfiguration) { (stringToShow) in
-            loadActionButton()
-            didReceiveTextToShow()
+        WS.makeWSCall(configuration: currentConfiguration) {
+            self.loadActionButton()
+            LoggingViewManager.presentLoggingView(in: self)
         }
     }
     

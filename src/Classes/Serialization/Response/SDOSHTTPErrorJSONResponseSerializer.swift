@@ -34,7 +34,6 @@ public class SDOSHTTPErrorJSONResponseSerializer<R: Decodable, E: HTTPResponseEr
         } else {
             return try parseResponse(request: request, response: response, data: data, error: error)
         }
-
     }
     
 }
