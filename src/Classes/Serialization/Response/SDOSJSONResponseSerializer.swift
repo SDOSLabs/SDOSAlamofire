@@ -38,13 +38,13 @@ public class SDOSJSONResponseSerializer<R: Decodable, E: AbstractErrorDTO>: Resp
         return DecodableResponseSerializer<DecodableRoot<E>>(decoder: decoder, emptyResponseCodes: [], emptyRequestMethods: [])
     }()
     
-    /// QUE APAREZCA --> "16 en 1"
+    /// A serializer that used to parse JSON responses. This initializer actually is "16 initializers in 1" since the 4 parameters have default values.
     ///
     /// - Parameters:
-    ///   - emptyResponseCodes: <#emptyResponseCodes description#>
-    ///   - emptyRequestMethods: <#emptyRequestMethods description#>
-    ///   - jsonResponseRootKey: <#jsonResponseRootKey description#>
-    ///   - jsonErrorRootKey: <#jsonErrorRootKey description#>
+    ///   - emptyResponseCodes: The codes for which an empty response is acceptable.
+    ///   - emptyRequestMethods: The HTTP methods for which an empty response is acceptable.
+    ///   - jsonResponseRootKey: The key (or keypath separated by points) where to start the parsing of the response JSON. By default, the parsing of the response type (`R`) is done from the root of the JSON.
+    ///   - jsonErrorRootKey: The key (or keypath separated by points) where to start the parsing of the response JSON error. By default, the parsing of the response error type (`E`) is done from the root of the JSON.
     public init(emptyResponseCodes: Set<Int> = DecodableResponseSerializer<R>.defaultEmptyResponseCodes,
                 emptyRequestMethods: Set<HTTPMethod> = DecodableResponseSerializer<R>.defaultEmptyRequestMethods,
                 jsonResponseRootKey: String? = nil,
