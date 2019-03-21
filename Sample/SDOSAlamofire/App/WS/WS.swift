@@ -42,7 +42,9 @@ struct WS {
         case .HTTPErrorJSONResponseSerializer:
             responseSerializer = SDOSHTTPErrorJSONResponseSerializer<UserDTO, ErrorDTO>(jsonResponseRootKey: responseRootKey, jsonErrorRootKey: errorRootKey)
         }
-        AF.request(Constants.WS.wsUserURL, method: .get, parameters: nil).validate().responseSDOSDecodable(responseSerializer: responseSerializer) { response in
+        
+        let dataRequest = GenericSession.shared.request(Constants.WS.wsUserURL, method: .get, parameters: nil)
+        dataRequest.validate().responseSDOSDecodable(responseSerializer: responseSerializer) { response in
             if let data = response.data,
                 let str = String(data: data, encoding: String.Encoding.utf8) {
                 LoggingViewManager.logString("Response received: \n\(str)")

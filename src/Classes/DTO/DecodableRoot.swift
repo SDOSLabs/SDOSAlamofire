@@ -2,7 +2,6 @@
 //  GenericErrorDTO.swift
 //  SDOSAlamofire
 //
-//  Created by Antonio Jesús Pallares on 12/02/2019.
 //  Copyright © 2019 SDOS. All rights reserved.
 //
 
