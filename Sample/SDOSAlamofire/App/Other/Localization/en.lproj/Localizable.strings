@@ -1,0 +1,46 @@
+/* 
+  Localizable.strings
+  SDOSAlamofireSample
+
+  Created by Antonio Jesús Pallares on 26/02/2019.
+  Copyright © 2019 SDOS. All rights reserved.
+*/
+
+"SDOSAlamofireSample.version" = "Versión %@";
+"SDOSAlamofireSample.alertOkActionTitle" = "OK";
+"SDOSAlamofireSample.btn.seeExample" = "Ver ejemplo";
+
+"SDOSAlamofireSample.example.sectionTitle.json" = "Tipo de JSON";
+"SDOSAlamofireSample.example.sectionTitle.serializer" = "Tipo de serializer";
+"SDOSAlamofireSample.example.sectionTitle.jsonRoot" = "JSON root keys";
+"SDOSAlamofireSample.example.sectionTitle.responseCode" = "Respuesta";
+"SDOSAlamofireSample.example.sectionTitle.parse" = "Parseo de la respuesta";
+"SDOSAlamofireSample.example.cell.JSONType.correct" = "JSON correcto";
+"SDOSAlamofireSample.example.cell.JSONType.malformed" = "JSON malformado";
+"SDOSAlamofireSample.example.cell.SerializerType.JSONResponseSerializer" = "SDOSJSONResponseSerializer";
+"SDOSAlamofireSample.example.cell.SerializerType.HTTPErrorJSONResponseSerializer" = "SDOSHTTPErrorJSONResponseSerializer";
+"SDOSAlamofireSample.example.cell.JSONRoot.some.response" = "Usar una JSON root key para el parseo de la respuesta";
+"SDOSAlamofireSample.example.cell.JSONRoot.none.response" = "No usar ninguna JSON root key para el parseo de la respuesta";
+"SDOSAlamofireSample.example.cell.JSONRoot.some.error" = "Usar una JSON root key para el parseo del error";
+"SDOSAlamofireSample.example.cell.JSONRoot.none.error" = "No usar ninguna JSON root key para el parseo del error";
+"SDOSAlamofireSample.example.cell.Result.success" = "Código correcto (200)";
+"SDOSAlamofireSample.example.cell.Result.failure" = "Código de error (400)";
+"SDOSAlamofireSample.example.cell.ResponseObject.userDTO" = "UserDTO";
+"SDOSAlamofireSample.example.cell.ErrorType.errorDTO" = "ErrorDTO";
+
+"SDOSAlamofireSample.example.info.JSONType.correct.title" = "JSON correcto";
+"SDOSAlamofireSample.example.info.JSONType.malformed.title" = "JSON malformado";
+"SDOSAlamofireSample.example.info.SerializerType.JSONResponseSerializer.title" = "SDOSJSONResponseSerializer";
+"SDOSAlamofireSample.example.info.SerializerType.JSONResponseSerializer.explanation" = "El SDOSJSONResponseSerializer<R, E> realiza la serialización en función del código de la respuesta del servidor. Si el código de la respuesta es válido (por ejemplo, 200), serializa la respuesta utilizando el DTO de respuesta (R). Si el código de la respuesta no es un código válido (por ejemplo, 400) utiliza el DTO de error (E) para serializar la respuesta.\n\nAsimismo, es posible modificar los códigos de respuesta que se consideran aceptables. Para ello, la validación de la request debe hacerse con el método \"validate\" del DataRequest (de Alamofire) que recibe el parámetro \"acceptableStatusCodes\"";
+"SDOSAlamofireSample.example.info.SerializerType.HTTPErrorJSONResponseSerializer.title" = "SDOSHTTPErrorJSONResponseSerializer";
+"SDOSAlamofireSample.example.info.SerializerType.HTTPErrorJSONResponseSerializer.explanation" = "El SDOSHTTPErrorJSONResponseSerializer<R, E> realiza la serialización en función de la respuesta. En primer lugar, intenta parsear la respuesta con el tipo de error (E). Si el objeto de error puede parsearse y devuelve true para el método \"isError()\", entonces se considerará que la petición ha fallado, devolviendo el error parseado. En otro caso, se basa en el código de la respuesta. Solo si ese código de respuesta es válido, intenta realizar el parseo de la misma con el tipo R.\n\nEste serializer sirve para poder parsear fácilmente las respuestas de tipo \"error-respuesta\" que se usan en los proyectos más antiguos. En general, en este caso las requests devuelven un código 200 incluso cuando la petición devuelve un error.";
+"SDOSAlamofireSample.example.info.JSONRoot.title" = "JSON root key";
+"SDOSAlamofireSample.example.info.JSONRoot.explanation" = "La ruta desde la que iniciar el parseo del objeto de respuesta.\n\nEl SDOSJSONResponseSerializer parsea el objeto de respuesta desde la raiz (es decir, por defecto su JSON root key es nula).\n\nEl SDOSHTTPErrorJSONResponseSerializer, salvo que se le indique lo contrario en su inicialización, parsea el objeto de respuesta usando la clave \"respuesta\".";
+"SDOSAlamofireSample.example.info.Result.success.title" = "Respuesta con código correcto (200)";
+"SDOSAlamofireSample.example.info.Result.success.explanation" = "La petición devolverá un código 200 de respuesta. Este código es, por lo general, un código de respuesta exitosa. Sin embargo, en respuestas de tipo \"error-respuesta\", el código 200 no implica que la petición no haya devuelto un error. Para obtener más información de este caso, ver la explicación del SDOSHTTPErrorJSONResponseSerializer, que es el objeto que debe usarse para serializar las respuestas de tipo \"error-respuesta\".";
+"SDOSAlamofireSample.example.info.Result.failure.title" = "Respuesta con código de error (400)";
+"SDOSAlamofireSample.example.info.Result.failure.explanation" = "La petición devolverá un código 400 de respuesta. Este código es, por lo general, un código de respuesta errónea.";
+"SDOSAlamofireSample.example.info.ResponseObject.userDTO.title" = "UserDTO";
+"SDOSAlamofireSample.example.info.ResponseObject.userDTO.explanation" = "Se usará el objeto userDTO para parsear la respuesta en caso de éxito.";
+"SDOSAlamofireSample.example.info.ErrorType.errorDTO.title" = "ErrorDTO";
+"SDOSAlamofireSample.example.info.ErrorType.errorDTO.explanation" = "Se usará el objeto ErrorDTO para parsear la respuesta en caso de error.";

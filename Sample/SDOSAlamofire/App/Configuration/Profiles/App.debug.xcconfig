@@ -1,0 +1,20 @@
+//
+//  App.debug.xcconfig
+//  SDOSKeyedCodable
+//
+//  Created by Antonio Jesús Pallares on 13/02/2019.
+//  Copyright © 2019 SDOS. All rights reserved.
+//
+#include "Shared.xcconfig"
+
+//Paquete
+PRODUCT_PACKAGE_NAME = $(BASE_PRODUCT_PACKAGE_NAME).dev
+
+//Vesión
+VERSION_NUMBER = 1.0.0
+BUILD_NUMBER = 1
+
+APP_ICON_ASSETS = Debug
+LAUNCHER_ASSETS = Debug
+
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited)
