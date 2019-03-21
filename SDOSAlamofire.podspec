@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
     spec.license      = { :type => 'SDOS License' }
     spec.homepage     = 'https://svrgitpub.sdos.es/iOS/SDOSAlamofire'
     spec.summary      = 'Librería de integración con Alamofire'
-    spec.source       = { :git => "https://svrgitpub.sdos.es/antonioj.pallares/SDOSAlamofire", :tag => "v#{spec.version}" }
+    spec.source       = { :git => "https://svrgitpub.sdos.es/iOS/SDOSAlamofire.git", :tag => "v#{spec.version}" }
     spec.framework    = ['Foundation', 'UIKit']
     spec.requires_arc = true
 
