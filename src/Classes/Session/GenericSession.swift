@@ -26,8 +26,6 @@ public extension HTTPHeader {
 
 open class GenericSession: Session {
     
-    public static let shared = GenericSession()
-    
     fileprivate static var defaultHTTPHeaders: HTTPHeaders {
         var headers = HTTPHeaders()
         headers.add(.acceptLanguage(Locale.currentLocale))
