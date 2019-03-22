@@ -15,6 +15,8 @@ typealias WSConfiguration = [ExampleSection]
 struct WS {
     private init() { }
     
+    static let sharedSession = GenericSession()
+    
     static func makeWSCall(configuration: WSConfiguration, completion: @escaping () -> Void) {
         
         logConfiguration(configuration: configuration)
@@ -43,7 +45,7 @@ struct WS {
             responseSerializer = SDOSHTTPErrorJSONResponseSerializer<UserDTO, ErrorDTO>(jsonResponseRootKey: responseRootKey, jsonErrorRootKey: errorRootKey)
         }
         
-        let dataRequest = GenericSession.shared.request(Constants.WS.wsUserURL, method: .get, parameters: nil)
+        let dataRequest = sharedSession.request(Constants.WS.wsUserURL, method: .get, parameters: nil)
         dataRequest.validate().responseSDOSDecodable(responseSerializer: responseSerializer) { response in
             if let data = response.data,
                 let str = String(data: data, encoding: String.Encoding.utf8) {
