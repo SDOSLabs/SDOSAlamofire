@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (5.0.0-beta.3)
+  - Alamofire (5.0.0-beta.4)
   - OHHTTPStubs (6.1.0):
     - OHHTTPStubs/Default (= 6.1.0)
   - OHHTTPStubs/Core (6.1.0)
@@ -13,13 +13,13 @@ PODS:
   - OHHTTPStubs/NSURLSession (6.1.0):
     - OHHTTPStubs/Core
   - OHHTTPStubs/OHPathHelpers (6.1.0)
-  - SDOSAlamofire (0.1.0):
-    - Alamofire (= 5.0.0-beta.3)
-    - SDOSAlamofire/src (= 0.1.0)
+  - SDOSAlamofire (0.9.2):
+    - Alamofire (= 5.0.0-beta.4)
+    - SDOSAlamofire/src (= 0.9.2)
     - SDOSKeyedCodable (~> 1.0.0)
     - SDOSSwiftExtension
-  - SDOSAlamofire/src (0.1.0):
-    - Alamofire (= 5.0.0-beta.3)
+  - SDOSAlamofire/src (0.9.2):
+    - Alamofire (= 5.0.0-beta.4)
     - SDOSKeyedCodable (~> 1.0.0)
     - SDOSSwiftExtension
   - SDOSKeyedCodable (1.0.0):
@@ -47,9 +47,9 @@ EXTERNAL SOURCES:
     :path: "../../"
 
 SPEC CHECKSUMS:
-  Alamofire: 50d6fa7e8cbe7f84559e86ab641ffd029db655f8
+  Alamofire: 6458d95477bc40adf10129f22c67cfb014162dc8
   OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
-  SDOSAlamofire: a21cc5671f875b7e3c08a477ba48d496b26760ba
+  SDOSAlamofire: db38bc8c352541611aaaeb26f7a5f9c209f067a0
   SDOSKeyedCodable: 583ce5fe38429a3a396606eec62d1ceb976a93ac
   SDOSSwiftExtension: 324e671bcb9bd1d252ab45f601702044dc64c2da
 
