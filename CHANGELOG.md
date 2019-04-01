@@ -1,3 +1,7 @@
+## [0.9.3 Primera versión](http://git.sdos.es/ios/SDOSAlamofire/tree/v0.9.3)
+
+- Adaptación a Alamofire 5.0.0 Beta 4
+
 ## [0.9.2 Primera versión](http://git.sdos.es/ios/SDOSAlamofire/tree/v0.9.2)
 
 - Añadido init al Struct ResultValue y eliminada instancia shared del GenericSession
