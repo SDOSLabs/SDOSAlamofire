@@ -273,8 +273,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "SDOSAlamofireSample" */;
 			buildPhases = (
-				5CC7B7252243E7420034969C /* XcodeVersion */,
 				61787A5E5FC964CD98145BB8 /* [CP] Check Pods Manifest.lock */,
+				5CC7B7252243E7420034969C /* XcodeVersion */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,

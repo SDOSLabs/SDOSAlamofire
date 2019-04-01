@@ -14,7 +14,7 @@ struct Constants {
     struct Documentation {
         private init() { }
         
-        static let url = "https://kc.sdos.es/display/IOS/SDOSAlamofire"
+        static let url = "https://kc.sdos.es/x/OQLLAQ"
     }
     
     struct Navigation {

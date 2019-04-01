@@ -10,15 +10,15 @@ import SDOSSwiftExtension
 
 public extension HTTPHeader {
     
-    public static let HTTPHeaderAppVersion = "version"
+    static let HTTPHeaderAppVersion = "version"
     
-    public static let HTTPHeaderDevice = "device"
+    static let HTTPHeaderDevice = "device"
     
-    public static func version(_ value: String) -> HTTPHeader {
+    static func version(_ value: String) -> HTTPHeader {
         return HTTPHeader(name: HTTPHeaderAppVersion, value: value)
     }
     
-    public static func device(_ value: String) -> HTTPHeader {
+    static func device(_ value: String) -> HTTPHeader {
         return HTTPHeader(name: HTTPHeaderDevice, value: value)
     }
     
