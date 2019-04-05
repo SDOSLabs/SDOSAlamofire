@@ -161,7 +161,7 @@ Por lo general, para hacer peticiones web, necesitaremos:
 * Struct de error DTO que implemente `GenericErrorDTO`.
 * Una instancia de `SDOSJSONResponseSerializer` con los dos tipos anteriores. 
 * El método `responseSDOSDecodable(responseSerializer:, completionHandler:)` declarado en la extensión de `DataRequest` que recibirá el anterior response serializer.
-* Hacer uso de PromiseKit para tratar con las posibles respuestas del Repository.
+* Hacer uso de [PromiseKit](https://github.com/mxcl/PromiseKit) para tratar con las posibles respuestas del Repository.
 
 Alamofire permite customizar, entre otros:
 * La serialización de la petición (lo que en AFNetworking se correspondía con los request serializers). Esto se haría mediante el parámetro `encoding: ParameterEncoding` del método `request(...)`. (Ver archivo Alamofire.swift). Por defecto el encoding de los parámetros se hace en la URL (`URLEncoding.default`). **Si queremos enviar los parámetros en JSON deberemos pasar `JSONEncoding.default`**
@@ -265,7 +265,7 @@ Este es el caso más básico posible.
 * Hacemos una petición GET.
 * Validamos la respuesta con el método básico `validate()`.
 * Parseamos la respuesta con el response serializer anterior.
-* No se usa PromiseKit. En nuestros desarrollos el Repository siempre debe devolver un Promise en las peticiones.
+* No se usa [PromiseKit](https://github.com/mxcl/PromiseKit). En nuestros desarrollos el Repository siempre debe devolver un Promise en las peticiones.
 
 ```js
 let responseSerializer = SDOSJSONResponseSerializer<UserDTO, ErrorDTO>()
@@ -323,4 +323,5 @@ AF.request(strURL, method: .post, parameters: parameters, encoding: JSONEncoding
 
 * [Alamofire](https://github.com/Alamofire/Alamofire)
 * [SDOSKeyedCodable](https://kc.sdos.es/x/FALLAQ)
+* [PromiseKit](https://github.com/mxcl/PromiseKit)
 * https://svrgitpub.sdos.es/iOS/SDOSAlamofire
