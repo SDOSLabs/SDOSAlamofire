@@ -1,3 +1,7 @@
+## [0.9.4 Nuevo Readme](http://git.sdos.es/ios/SDOSAlamofire/tree/v0.9.4)
+
+- Actualizado el archivo README.md con la documentación de la librería
+
 ## [0.9.3 Primera versión](http://git.sdos.es/ios/SDOSAlamofire/tree/v0.9.3)
 
 - Adaptación a Alamofire 5.0.0 Beta 4
