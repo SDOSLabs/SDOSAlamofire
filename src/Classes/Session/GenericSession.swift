@@ -140,7 +140,7 @@ open class GenericSession: Session {
     }
     
     override open func upload(multipartFormData: @escaping (MultipartFormData) -> Void,
-                     usingThreshold encodingMemoryThreshold: UInt64 = MultipartUpload.encodingMemoryThreshold,
+                     usingThreshold encodingMemoryThreshold: UInt64 = MultipartFormData.encodingMemoryThreshold,
                      fileManager: FileManager = .default,
                      to url: URLConvertible,
                      method: HTTPMethod = .post,
