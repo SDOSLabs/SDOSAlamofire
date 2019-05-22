@@ -391,7 +391,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SDOSAlamofireSample/Pods-SDOSAlamofireSample-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SDOSAlamofireSample/Pods-SDOSAlamofireSample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
 				"${BUILT_PRODUCTS_DIR}/SDOSAlamofire/SDOSAlamofire.framework",
@@ -410,7 +410,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SDOSAlamofireSample/Pods-SDOSAlamofireSample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SDOSAlamofireSample/Pods-SDOSAlamofireSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
