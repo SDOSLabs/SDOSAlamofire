@@ -1,3 +1,8 @@
+## [0.9.6 Alamofire Beta 6](http://git.sdos.es/ios/SDOSAlamofire/tree/v0.9.6)
+
+- Adaptación a Alamofire 5.0.0 Beta 5
+- Corrección de bug al parsear el objeto de error
+
 ## [0.9.5 Alamofire Beta 5](http://git.sdos.es/ios/SDOSAlamofire/tree/v0.9.5)
 
 - Adaptación a Alamofire 5.0.0 Beta 5
