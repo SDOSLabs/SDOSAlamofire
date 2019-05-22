@@ -27,7 +27,7 @@ SDOSAlamofire ofrece una capa de integración con [Alamofire](https://github.com
 Usaremos [CocoaPods](https://cocoapods.org). Hay que añadir la dependencia al `Podfile`:
 
 ```ruby
-pod 'SDOSAlamofire', '~>0.9.5' 
+pod 'SDOSAlamofire', '~>0.9.6' 
 ```
 
 ## La librería
@@ -316,7 +316,7 @@ AF.request(strURL, method: .post, parameters: parameters, encoding: JSONEncoding
 
 ## Dependencias
 
-* [Alamofire](https://github.com/Alamofire/Alamofire) 5.0.0-beta-5
+* [Alamofire](https://github.com/Alamofire/Alamofire) 5.0.0-beta-6
 * [SDOSSwiftExtension](https://kc.sdos.es/x/DALLAQ)
 
 ## Referencias
