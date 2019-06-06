@@ -32,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29515D4F22A918270025550B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		29515D5022A918270025550B /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../../CHANGELOG.md; sourceTree = "<group>"; };
 		3E905E76770C2341312372CF /* Pods-SDOSAlamofireSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDOSAlamofireSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDOSAlamofireSample/Pods-SDOSAlamofireSample.release.xcconfig"; sourceTree = "<group>"; };
 		5C0FB1662223D81D00F4D291 /* App.debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = App.debug.xcconfig; sourceTree = "<group>"; };
 		5C0FB1672223D81D00F4D291 /* Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
@@ -219,6 +221,8 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				29515D5022A918270025550B /* CHANGELOG.md */,
+				29515D4F22A918270025550B /* README.md */,
 				607FACD21AFB9204008FA782 /* App */,
 				607FACD11AFB9204008FA782 /* Products */,
 				4FB35BD6DBF7DCFDAC5EA28A /* Pods */,
@@ -312,6 +316,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -391,7 +396,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SDOSAlamofireSample/Pods-SDOSAlamofireSample-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-SDOSAlamofireSample/Pods-SDOSAlamofireSample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
 				"${BUILT_PRODUCTS_DIR}/SDOSAlamofire/SDOSAlamofire.framework",
@@ -410,7 +415,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SDOSAlamofireSample/Pods-SDOSAlamofireSample-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SDOSAlamofireSample/Pods-SDOSAlamofireSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
