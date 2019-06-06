@@ -1,3 +1,7 @@
+## [0.9.7 Change RequestValue](http://git.sdos.es/ios/SDOSAlamofire/tree/v0.9.7)
+
+- Ahora el objeto RequestValue tiene el Request como opcional
+
 ## [0.9.6 Alamofire Beta 6](http://git.sdos.es/ios/SDOSAlamofire/tree/v0.9.6)
 
 - Adaptación a Alamofire 5.0.0 Beta 5

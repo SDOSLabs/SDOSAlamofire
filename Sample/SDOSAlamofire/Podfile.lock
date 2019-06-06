@@ -13,12 +13,12 @@ PODS:
   - OHHTTPStubs/NSURLSession (6.1.0):
     - OHHTTPStubs/Core
   - OHHTTPStubs/OHPathHelpers (6.1.0)
-  - SDOSAlamofire (0.9.5):
+  - SDOSAlamofire (0.9.6):
     - Alamofire (= 5.0.0-beta.6)
-    - SDOSAlamofire/src (= 0.9.5)
+    - SDOSAlamofire/src (= 0.9.6)
     - SDOSKeyedCodable (~> 1.0.0)
     - SDOSSwiftExtension
-  - SDOSAlamofire/src (0.9.5):
+  - SDOSAlamofire/src (0.9.6):
     - Alamofire (= 5.0.0-beta.6)
     - SDOSKeyedCodable (~> 1.0.0)
     - SDOSSwiftExtension
@@ -49,10 +49,10 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: cd08a4402bd12cacd0c66f23fb12fec8d6b965e4
   OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
-  SDOSAlamofire: 10a05037f3ffcb1bd7b302cd5ee17282c14788e0
+  SDOSAlamofire: 3a67c2345eeb2844141bad43fc4eae6d128ab268
   SDOSKeyedCodable: 583ce5fe38429a3a396606eec62d1ceb976a93ac
   SDOSSwiftExtension: c409340b19b744de0fc51375b3b799f370fc6aff
 
 PODFILE CHECKSUM: 316c15d70ef975c7bf2a08c9773fca9f4e861a0a
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.5.3
