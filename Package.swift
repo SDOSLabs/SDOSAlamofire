@@ -18,7 +18,11 @@ let package = Package(
     targets: [
         .target(
             name: "SDOSAlamofire",
-            dependencies: [],
+            dependencies: [
+            "Alamofire",
+            "SDOSKeyedCodable",
+            "SDOSSwiftExtension"
+            ],
             path: "src")
     ]
 )
