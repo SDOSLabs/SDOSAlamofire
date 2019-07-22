@@ -3,14 +3,11 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 platform :ios, '10.0'
 install! 'cocoapods', :deterministic_uuids => false
-use_modular_headers!
-inhibit_all_warnings!
 use_frameworks!
+inhibit_all_warnings!
 
 def shared_pods
-    pod 'SDOSAlamofire', :path => '../../', :inhibit_warnings => false
   	pod 'OHHTTPStubs'
-  	pod 'SDOSKeyedCodable'
 end
 
 target 'SDOSAlamofireSample' do
