@@ -4,6 +4,9 @@ import PackageDescription
 
 let package = Package(
     name: "SDOSAlamofire",
+    platforms: [
+       .iOS("10.0")
+    ],
     products: [
         .library(
             name: "SDOSAlamofire",
