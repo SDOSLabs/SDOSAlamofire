@@ -4,7 +4,7 @@ Pod::Spec.new do |spec|
     spec.name         = 'SDOSAlamofire'
     spec.authors      = 'SDOS'
     spec.version      = @version
-    spec.license      = { :type => 'SDOS License' }
+    spec.license      = { :type => 'MIT' }
     spec.homepage     = 'https://svrgitpub.sdos.es/iOS/SDOSAlamofire'
     spec.summary      = 'Librería de integración con Alamofire'
     spec.source       = { :git => "https://svrgitpub.sdos.es/iOS/SDOSAlamofire.git", :tag => "v#{spec.version}" }
