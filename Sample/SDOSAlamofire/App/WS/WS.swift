@@ -54,10 +54,12 @@ struct WS {
             switch response.result {
             case .success(let user):
                 LoggingViewManager.logString("Success. Received dto response: \(user)")
-            case .failure(let error as ErrorDTO):
-                LoggingViewManager.logString("Error. Received dto error: \(error)")
             case .failure(let error):
-                LoggingViewManager.logString("Error. Could not parse dto error. Received error: \(error)")
+                if let errorDTO = error.errorDTO {
+                    LoggingViewManager.logString("Error. Received dto error: \(errorDTO)")
+                } else {
+                    LoggingViewManager.logString("Error. Could not parse dto error. Received error: \(error)")
+                }
             }
             completion()
         }

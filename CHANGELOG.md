@@ -1,3 +1,8 @@
+## Changes
+
+- Adaptación a Alamofire 5.0.0 RC_2, por lo que se ha eliminado SDOSAFError
+- Añadida propiedad `errorDTO` a AFError para acceder al objeto de error parseado en caso de fallo en la petición
+
 ## [0.9.7 Change RequestValue](http://git.sdos.es/ios/SDOSAlamofire/tree/v0.9.7)
 
 - Ahora el objeto RequestValue tiene el Request como opcional

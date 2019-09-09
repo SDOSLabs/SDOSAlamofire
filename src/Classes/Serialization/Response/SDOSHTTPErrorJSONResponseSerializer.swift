@@ -33,10 +33,8 @@ public class SDOSHTTPErrorJSONResponseSerializer<R: Decodable, E: HTTPResponseEr
     public override func serialize(request: URLRequest?, response: HTTPURLResponse?, data: Data?, error: Error?) throws -> R {
         if let parsedError = try? parseError(request: request, response: response, data: data), parsedError.isError() {
             throw parsedError
-        } else if
-            let error = error as? AFError.ResponseValidationFailureReason,
-            case AFError.ResponseValidationFailureReason.unacceptableStatusCode(let code) = error {
-            throw SDOSAFError.badErrorResponse(code: code)
+        } else if let error = error {
+            throw error
         } else {
             return try parseResponse(request: request, response: response, data: data, error: error)
         }

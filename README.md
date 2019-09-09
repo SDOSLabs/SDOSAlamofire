@@ -130,17 +130,13 @@ SDOSAlamofire consta de:
         * Solo si ese código de respuesta es válido, intenta realizar el parseo de la misma con el tipo `R`.
     * Igualmente, es posible modificar los códigos de respuesta que se consideran aceptables (esto no depende del response serializer). Para ello, la validación de la request debe hacerse con el método `validate` del `DataRequest` (de Alamofire) que recibe el parámetro `acceptableStatusCodes`.
 
-4. **`SDOSAFError`**: SDOSAlamofire añade un nuevo tipo de error, `SDOSAFError`.
+4. **`AFError`'s `errorDTO`**: SDOSAlamofire añade la propiedad `errorDTO` al tipo de error de Alamofire (`AFError`) para acceder rápidamente al objeto DTO error de parseo.
     
     ```js
-    public enum SDOSAFError : Error {
-        case badErrorResponse(code: Int)
+    public extension AFError {
+        var errorDTO: AbstractErrorDTO?
     }
     ```
-
-    * Este error se lanzará en los siguientes casos concretos:
-        * Cuando, usando el `SDOSJSONResponseSerializer`, el código de respuesta de la petición web es de error pero no es posible parsear el JSON de respuesta con el tipo proporcionado `R`. Esto puede darse cuando la petición web devuelve un error 500 pues, en este caso, es común que la respuesta sea un texto XML con la traza del error del servidor.
-        * Cuando, usando el `SDOSHTTPErrorJSONResponseSerializer`, el código de respuesta de la petición web es de error pero, o bien no es posible parsear el JSON de respuesta como error o bien el método `isError()` del error parseado devuelve `false`.
 
 5.  **Extensión de `DataRequest`** para el uso de los response serializers anteriores. 
     
