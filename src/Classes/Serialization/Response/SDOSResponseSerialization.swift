@@ -20,7 +20,7 @@ extension DataRequest {
     @discardableResult
     public func responseSDOSDecodable<R: Decodable, E: AbstractErrorDTO>(responseSerializer: SDOSJSONResponseSerializer<R, E>,
                                                                          queue: DispatchQueue = .main,
-                                                                         completionHandler: @escaping (DataResponse<R>) -> Void) -> Self {
+                                                                         completionHandler: @escaping (AFDataResponse<R>) -> Void) -> Self {
         return response(queue: queue,
                         responseSerializer: responseSerializer,
                         completionHandler: completionHandler)

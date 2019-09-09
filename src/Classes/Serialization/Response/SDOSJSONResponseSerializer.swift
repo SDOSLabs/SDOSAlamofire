@@ -55,13 +55,11 @@ public class SDOSJSONResponseSerializer<R: Decodable, E: AbstractErrorDTO>: Resp
     }
     
     public func serialize(request: URLRequest?, response: HTTPURLResponse?, data: Data?, error: Error?) throws -> R {
-        if let afError = error as? AFError,
-            case AFError.responseValidationFailed(reason: let reason) = afError,
-            case AFError.ResponseValidationFailureReason.unacceptableStatusCode(let code) = reason {
+        if let afError = error as? AFError {
             if let parsedError = try? parseError(request: request, response: response, data: data) {
                 throw parsedError
             } else {
-                throw SDOSAFError.badErrorResponse(code: code)
+                throw afError
             }
         } else {
             return try parseResponse(request: request, response: response, data: data, error: error)
