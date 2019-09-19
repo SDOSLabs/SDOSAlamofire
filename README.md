@@ -12,7 +12,7 @@
 
 # SDOSAlamofire
 
-- Para consultar los últimos cambios en la librería consultar el [CHANGELOG.md](https://svrgitpub.sdos.es/iOS/SDOSAlamofire/blob/master/CHANGELOG.md).
+- Para consultar los últimos cambios en la librería consultar el [CHANGELOG.md](https://github.com/SDOSLabs/SDOSAlamofire/blob/master/CHANGELOG.md).
 
 - Enlace confluence: https://kc.sdos.es/x/OQLLAQ
 
@@ -307,7 +307,7 @@ AF.request(strURL, method: .post, parameters: parameters, encoding: JSONEncoding
 
 ## Proyecto de ejemplo
 
-* Descargar el proyecto SDOSAlamofire desde el siguiente enlace: https://svrgitpub.sdos.es/iOS/SDOSAlamofire.
+* Descargar el proyecto SDOSAlamofire desde el siguiente enlace: https://github.com/SDOSLabs/SDOSAlamofire.
 * Comprobar que, al pulsar el botón **Ver ejemplo** se muestra una app que permite simular llamadas a un servicio. Podemos elegir diversos parámetros para modificar la llamada al servicio
 
 ## Dependencias
@@ -320,4 +320,4 @@ AF.request(strURL, method: .post, parameters: parameters, encoding: JSONEncoding
 * [Alamofire](https://github.com/Alamofire/Alamofire)
 * [SDOSKeyedCodable](https://kc.sdos.es/x/FALLAQ)
 * [PromiseKit](https://github.com/mxcl/PromiseKit)
-* https://svrgitpub.sdos.es/iOS/SDOSAlamofire
+* https://github.com/SDOSLabs/SDOSAlamofire

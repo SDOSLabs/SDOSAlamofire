@@ -35,12 +35,12 @@ DEPENDENCIES:
   - SDOSKeyedCodable
 
 SPEC REPOS:
-  http://svrgitpub.sdos.es/ios/cocoapods-specs.git:
-    - SDOSKeyedCodable
-    - SDOSSwiftExtension
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - OHHTTPStubs
+  https://github.com/SDOSLabs/cocoapods-specs.git:
+    - SDOSKeyedCodable
+    - SDOSSwiftExtension
 
 EXTERNAL SOURCES:
   SDOSAlamofire:
@@ -49,10 +49,10 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: f9450d3c7f6bea2ad62e7a541c3e9b186c7991d6
   OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
-  SDOSAlamofire: ddbd85c84373443a079abdc2a96302dfb525f640
-  SDOSKeyedCodable: 583ce5fe38429a3a396606eec62d1ceb976a93ac
-  SDOSSwiftExtension: c409340b19b744de0fc51375b3b799f370fc6aff
+  SDOSAlamofire: 14db1108516d5a9956c2c006e12fb04f433a36a0
+  SDOSKeyedCodable: 4b4f11f9a2d08292fb263fc94812e2909850123c
+  SDOSSwiftExtension: b3843ac416b90d1ac0806683c0730affadeef39d
 
-PODFILE CHECKSUM: 316c15d70ef975c7bf2a08c9773fca9f4e861a0a
+PODFILE CHECKSUM: b3381db6541e0118fd54c036215ffe7e8398c044
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.7.5
