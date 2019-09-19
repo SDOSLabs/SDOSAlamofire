@@ -35,7 +35,7 @@ DEPENDENCIES:
   - SDOSKeyedCodable
 
 SPEC REPOS:
-  http://svrgitpub.sdos.es/ios/cocoapods-specs.git:
+  https://github.com/SDOSLabs/cocoapods-specs.git:
     - SDOSKeyedCodable
     - SDOSSwiftExtension
   https://github.com/cocoapods/specs.git:
