@@ -9,13 +9,14 @@
 import Foundation
 import SDOSAlamofire
 import Alamofire
+import SDOSKeyedCodable
 
 typealias WSConfiguration = [ExampleSection]
 
+let sharedSession = GenericSession()
+
 struct WS {
     private init() { }
-    
-    static let sharedSession = GenericSession()
     
     static func makeWSCall(configuration: WSConfiguration, completion: @escaping () -> Void) {
         
@@ -165,6 +166,40 @@ struct WS {
         LoggingViewManager.logString(strParseError)
     }
     
+}
+
+struct JSONAPI {
+    private init() { }
+    
+    static func makeWSCall(completion: @escaping () -> Void) {
+        let url = Constants.WS.wsJSONAPIURL
+        let request = sharedSession.request(url, method: .get, parameters: nil)
+        let responseAPISerializer = SDOSJSONAPIResponseSerializer<[Route], ErrorDTO>()
+        
+        request.validate().responseJSONAPI(responseSerializer: responseAPISerializer) { (response) in
+            
+            if let data = response.data,
+                let object = try? JSONSerialization.jsonObject(with: data, options: []),
+                let dataPretty = try? JSONSerialization.data(withJSONObject: object, options: .prettyPrinted),
+                let str = String(data: dataPretty, encoding: .utf8) {
+                LoggingViewManager.logString("Response received: \n\(str)\n\n")
+            }
+            
+            switch response.result {
+            case .success(let routes):
+                print(routes)
+                LoggingViewManager.logString("Success. Received dto response: \(routes)")
+            case .failure(let error):
+                print(error)
+                if let errorDTO = error.errorDTO {
+                    LoggingViewManager.logString("Error. Received dto error: \(errorDTO)")
+                } else {
+                    LoggingViewManager.logString("Error. Could not parse dto error. Received error: \(error)")
+                }
+            }
+            completion()
+        }
+    }
 }
 
 extension Array where Element == ExampleSection {
