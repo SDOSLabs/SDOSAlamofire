@@ -129,6 +129,16 @@ SDOSAlamofire consta de:
         * En caso de que no se pueda parsear el error o de que `isError()` devuelva `false`, el serializer se basa en el código de la respuesta.
         * Solo si ese código de respuesta es válido, intenta realizar el parseo de la misma con el tipo `R`.
     * Igualmente, es posible modificar los códigos de respuesta que se consideran aceptables (esto no depende del response serializer). Para ello, la validación de la request debe hacerse con el método `validate` del `DataRequest` (de Alamofire) que recibe el parámetro `acceptableStatusCodes`.
+    
+    3.3. **`SDOSJSONAPIResponseSerializer`**: es el serializador que se usará para parsear los servicios que vengan con estructura JSONAPI.
+    ```js
+    public class SDOSJSONAPIResponseSerializer<R: Decodable, E: AbstractErrorDTO>: ResponseSerializer {
+    public init(includeList: String? = nil, keyPath: String? = "data")
+    }
+    ```
+    * Parámetros: Mismos
+    * `includeList`: Lista de includes para la deserialización de relaciones de JSON:API.
+    * `keyPath`: Raiz del JOSN para su decodificación.
 
 4. **`AFError`'s `errorDTO`**: SDOSAlamofire añade la propiedad `errorDTO` al tipo de error de Alamofire (`AFError`) para acceder rápidamente al objeto DTO error de parseo.
     
