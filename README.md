@@ -30,6 +30,12 @@ Usaremos [CocoaPods](https://cocoapods.org). Hay que añadir la dependencia al `
 pod 'SDOSAlamofire', '~>0.9.6' 
 ```
 
+Si queremos usar JSON:API con SDOSAlamofire hay que añadir la dependencia al `Podfile`:
+
+```ruby
+pod 'SDOSAlamofire/JSONAPI'
+```
+
 ## La librería
 
 ### Qué hay en SDOSAlamofire
@@ -133,12 +139,12 @@ SDOSAlamofire consta de:
     3.3. **`SDOSJSONAPIResponseSerializer`**: es el serializador que se usará para parsear los servicios que vengan con estructura JSONAPI.
     ```js
     public class SDOSJSONAPIResponseSerializer<R: Decodable, E: AbstractErrorDTO>: ResponseSerializer {
-    public init(includeList: String? = nil, keyPath: String? = "data")
+        public init(includeList: String? = nil, keyPath: String? = JSONAPI.rootPath)
     }
     ```
-    * Parámetros: Mismos
-    * `includeList`: Lista de includes para la deserialización de relaciones de JSON:API.
-    * `keyPath`: Raiz del JOSN para su decodificación.
+    * Parámetros:
+        * `includeList`: Lista de includes para la deserialización de relaciones de JSON:API.
+        * `keyPath`: Raiz del JSON para su decodificación.
 
 4. **`AFError`'s `errorDTO`**: SDOSAlamofire añade la propiedad `errorDTO` al tipo de error de Alamofire (`AFError`) para acceder rápidamente al objeto DTO error de parseo.
     
