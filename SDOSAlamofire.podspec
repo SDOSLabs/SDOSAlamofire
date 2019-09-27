@@ -11,10 +11,20 @@ Pod::Spec.new do |spec|
     spec.framework    = ['Foundation']
     spec.requires_arc = true
 
-    spec.subspec 'src' do |s1|
-        s1.preserve_paths = 'src/Classes/*'
-        s1.source_files = ['src/Classes/*{*.swift}', 'src/Classes/**/*{*.swift}']
+    spec.default_subspec = 'Core'
+
+    spec.subspec 'Core' do |s1|
+        s1.preserve_paths = 'src/Classes/Core/*'
+        s1.source_files = ['src/Classes/Core/*{*.swift}', 'src/Classes/Core/**/*{*.swift}']
     end
+
+    spec.subspec 'JSONAPI' do |s1|
+        s1.preserve_paths = 'src/Classes/JSONAPI/*'
+        s1.source_files = ['src/Classes/JSONAPI/*{*.swift}', 'src/Classes/JSONAPI/**/*{*.swift}']
+        s1.dependency 'SDOSAlamofire/Core'
+        s1.dependency 'Japx/Codable'
+    end
+
     spec.dependency 'Alamofire', '5.0.0-rc.2'
     spec.dependency 'SDOSKeyedCodable', '~> 1.0.0'
     spec.dependency 'SDOSSwiftExtension'

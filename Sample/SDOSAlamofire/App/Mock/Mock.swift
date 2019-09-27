@@ -43,3 +43,24 @@ func setupServiceMock() throws {
         return response
     }
 }
+
+func setupServiceJSONAPIMock() throws {
+    OHHTTPStubs.stubRequests(passingTest: { (request: URLRequest) -> Bool in
+        guard
+            let host = request.url?.host,
+            let hostToStub = URLComponents(string: Constants.WS.wsJSONAPIURL)?.host
+            else {
+                return false
+        }
+        return hostToStub == host
+    }) { _ -> OHHTTPStubsResponse in
+        
+        let responseData: Data = JSON.correctJSONAPIData
+        let statusCode: Int32 = 200
+        
+        let response = OHHTTPStubsResponse(data: responseData, statusCode: statusCode, headers: nil)
+        response.responseTime = TimeInterval.random(in: 0.3 ... 2)
+        
+        return response
+    }
+}
