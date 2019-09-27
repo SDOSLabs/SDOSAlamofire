@@ -9,7 +9,7 @@
   - [Proyecto de ejemplo](#proyecto-de-ejemplo)
   - [Dependencias](#dependencias)
   - [Referencias](#referencias)
-- [JSONAPI](#jsonapi)
+- [SDOSAlamofire+JSONAPI](#sdosalamofirejsonapi)
   - [Introducción](#introducci%c3%b3n-1)
   - [Instalación](#instalaci%c3%b3n-1)
     - [Cocoapods](#cocoapods-1)
@@ -322,7 +322,7 @@ AF.request(strURL, method: .post, parameters: parameters, encoding: JSONEncoding
 
 ## Dependencias
 
-* [Alamofire](https://github.com/Alamofire/Alamofire) 5.0.0-beta-6
+* [Alamofire](https://github.com/Alamofire/Alamofire) 5.0.0-rc.2
 * [SDOSSwiftExtension](https://kc.sdos.es/x/DALLAQ)
 
 ## Referencias
@@ -332,7 +332,7 @@ AF.request(strURL, method: .post, parameters: parameters, encoding: JSONEncoding
 * [PromiseKit](https://github.com/mxcl/PromiseKit)
 * https://github.com/SDOSLabs/SDOSAlamofire
 
-# JSONAPI
+# SDOSAlamofire+JSONAPI
 
 ## Introducción
 
@@ -447,4 +447,4 @@ func loadRoutes() -> RequestValue<Promise<[RouteBO]>> {
 ## Dependencias
 
 * [SDOSAlamofire](https://github.com/SDOSLabs/SDOSAlamofire)
-* [Japx/Codable](https://github.com/infinum/Japx)
+* [Japx/Codable](https://github.com/infinum/Japx) 2.1.0
