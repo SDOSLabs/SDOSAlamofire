@@ -21,6 +21,11 @@ struct JSON {
         return try! Data(contentsOf: url)
     }
     
+    static var correctJSONAPIData: Data {
+        let url = urlForResourceName("JSONAPI")
+        return try! Data(contentsOf: url)
+    }
+    
     static var malformedJSON: String {
         let url = urlForResourceName("MalformedJSON")
         return try! String(contentsOfFile: url.path)
@@ -28,6 +33,11 @@ struct JSON {
     
     static var correctJSON: String {
         let url = urlForResourceName("Example0")
+        return try! String(contentsOfFile: url.path)
+    }
+    
+    static var correctJSONAPI: String {
+        let url = urlForResourceName("JSONAPI")
         return try! String(contentsOfFile: url.path)
     }
     

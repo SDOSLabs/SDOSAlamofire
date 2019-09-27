@@ -1,0 +1,313 @@
+{
+  "jsonapi": {
+    "version": "1.0",
+    "meta": {
+      "links": {
+        "self": {
+          "href": "http://jsonapi.org/format/1.0/"
+        }
+      }
+    }
+  },
+  "data": [
+    {
+      "type": "node--scity_route",
+      "id": "0e52cb98-4453-4a75-be2a-c476bc5ac5fb",
+      "attributes": {
+        "drupal_internal__nid": 800,
+        "drupal_internal__vid": 800,
+        "langcode": "es",
+        "revision_timestamp": "2019-03-14T09:30:35+00:00",
+        "revision_log": null,
+        "status": true,
+        "title": "Flora urbana - Ruta 1",
+        "created": "2019-03-14T09:30:35+00:00",
+        "changed": "2019-08-08T10:00:56+00:00",
+        "promote": false,
+        "sticky": false,
+        "default_langcode": true,
+        "revision_translation_affected": true,
+        "group_uuid": "3bacc42a-263d-40b6-8b88-1316e2ea9341",
+        "path": {
+          "alias": "/rutas/flora-urbana-ruta-1",
+          "pid": 2432,
+          "langcode": "es"
+        },
+        "publish_on": null,
+        "unpublish_on": null,
+        "scity_dashboard": false,
+        "octopush_notifications": false,
+        "octopush_notifications_sent": null,
+        "sae_exclude": null,
+        "content_translation_source": "und",
+        "content_translation_outdated": false,
+        "field_display_title": "Flora urbana - Ruta 1",
+        "body": {
+          "value": "<p>Comenzamos esta ruta botánica en la céntrica plaza de España, junto al famoso Puente Nuevo. Buscamos la cercana calle Rosario, para después afluir a la calle Virgen de los Remedios, por donde descendemos hasta tomar a la derecha la calle de La Mina, que da acceso a los jardines de Cuenca, ubicados en el precipicio sobre el Tajo. Destacan aquí algunos árboles, principalmente los pinsapos (Abies pinsapo). En las cornisas y alrededores hallamos interesantes plantas como Cymbalaria muralis, Erodium cicutarium, Lupinus angustifolius, Trachelium caeruleum, etc. Posteriormente accedemos al Puente Viejo y nos encaminamos por la Cuesta de Santo Domingo hasta llegar al Palacio de Salvatierra, en cuyos jardines se encuentra el pinsapo (Abies pinsapo) de mayor altura de la ciudad; subiendo por la calle Marques de Salvatierra, es posible observar la copa de este majestuoso abeto. Nuestra ruta prosigue por la Cuesta de Santo Domingo, siendo el siguiente hito los jardines de la Casa del Rey Moro. Para visitarlos hemos de pagar la entrada, aunque merece la pena, ya que también podremos descender al fondo del río a través de la Mina, una escalera semioculta entre rocas obra de tiempo de los árabes. Los jardines, encargados por la Duquesa de Parcent, fueron diseñados por el ingeniero Forestier. En el año 1943 fueron declarados monumento Histórico-Artístico. La calle Cuesta de Santo Domingo viene a salir a la calle Armiñan, la cual tomándola a la derecha nos encamina al Puente Nuevo, donde finaliza la ruta.</p>\r\n",
+          "format": "basic_html",
+          "processed": "<p>Comenzamos esta ruta botánica en la céntrica plaza de España, junto al famoso Puente Nuevo. Buscamos la cercana calle Rosario, para después afluir a la calle Virgen de los Remedios, por donde descendemos hasta tomar a la derecha la calle de La Mina, que da acceso a los jardines de Cuenca, ubicados en el precipicio sobre el Tajo. Destacan aquí algunos árboles, principalmente los pinsapos (Abies pinsapo). En las cornisas y alrededores hallamos interesantes plantas como Cymbalaria muralis, Erodium cicutarium, Lupinus angustifolius, Trachelium caeruleum, etc. Posteriormente accedemos al Puente Viejo y nos encaminamos por la Cuesta de Santo Domingo hasta llegar al Palacio de Salvatierra, en cuyos jardines se encuentra el pinsapo (Abies pinsapo) de mayor altura de la ciudad; subiendo por la calle Marques de Salvatierra, es posible observar la copa de este majestuoso abeto. Nuestra ruta prosigue por la Cuesta de Santo Domingo, siendo el siguiente hito los jardines de la Casa del Rey Moro. Para visitarlos hemos de pagar la entrada, aunque merece la pena, ya que también podremos descender al fondo del río a través de la Mina, una escalera semioculta entre rocas obra de tiempo de los árabes. Los jardines, encargados por la Duquesa de Parcent, fueron diseñados por el ingeniero Forestier. En el año 1943 fueron declarados monumento Histórico-Artístico. La calle Cuesta de Santo Domingo viene a salir a la calle Armiñan, la cual tomándola a la derecha nos encamina al Puente Nuevo, donde finaliza la ruta.</p>",
+          "summary": ""
+        },
+        "field_route_costa_distance": null,
+        "field_route_costa_duration": null,
+        "field_route_distance": null,
+        "field_route_duration": null,
+        "field_route_more_information": null,
+        "field_route_travel_mode": null,
+        "field_shared_outstanding": false,
+        "field_shared_videos": []
+      },
+      "relationships": {
+        "node_type": {
+          "data": {
+            "type": "node_type--node_type",
+            "id": "718ac72e-bbea-4a61-b833-261906dd88f5"
+          },
+          "links": {
+            "self": {
+              "href": "http://staging-costa-turismo.sdos-dev.tech/es/jsonapi/node/scity_route/0e52cb98-4453-4a75-be2a-c476bc5ac5fb/relationships/node_type?resourceVersion=id%3A800"
+            },
+            "related": {
+              "href": "http://staging-costa-turismo.sdos-dev.tech/es/jsonapi/node/scity_route/0e52cb98-4453-4a75-be2a-c476bc5ac5fb/node_type?resourceVersion=id%3A800"
+            }
+          }
+        },
+        "revision_uid": {
+          "data": {
+            "type": "user--user",
+            "id": "afb847d7-8b30-421f-94cd-ae6fe4c0c785"
+          },
+          "links": {
+            "self": {
+              "href": "http://staging-costa-turismo.sdos-dev.tech/es/jsonapi/node/scity_route/0e52cb98-4453-4a75-be2a-c476bc5ac5fb/relationships/revision_uid?resourceVersion=id%3A800"
+            },
+            "related": {
+              "href": "http://staging-costa-turismo.sdos-dev.tech/es/jsonapi/node/scity_route/0e52cb98-4453-4a75-be2a-c476bc5ac5fb/revision_uid?resourceVersion=id%3A800"
+            }
+          }
+        },
+        "uid": {
+          "data": {
+            "type": "user--user",
+            "id": "afb847d7-8b30-421f-94cd-ae6fe4c0c785"
+          },
+          "links": {
+            "self": {
+              "href": "http://staging-costa-turismo.sdos-dev.tech/es/jsonapi/node/scity_route/0e52cb98-4453-4a75-be2a-c476bc5ac5fb/relationships/uid?resourceVersion=id%3A800"
+            },
+            "related": {
+              "href": "http://staging-costa-turismo.sdos-dev.tech/es/jsonapi/node/scity_route/0e52cb98-4453-4a75-be2a-c476bc5ac5fb/uid?resourceVersion=id%3A800"
+            }
+          }
+        },
+        "group_content": {
+          "data": [
+            {
+              "type": "group_content--11--node--scity_route",
+              "id": "640cac0a-dcb0-4010-b8f0-4547739c6893"
+            }
+          ],
+          "links": {
+            "self": {
+              "href": "http://staging-costa-turismo.sdos-dev.tech/es/jsonapi/node/scity_route/0e52cb98-4453-4a75-be2a-c476bc5ac5fb/relationships/group_content?resourceVersion=id%3A800"
+            },
+            "related": {
+              "href": "http://staging-costa-turismo.sdos-dev.tech/es/jsonapi/node/scity_route/0e52cb98-4453-4a75-be2a-c476bc5ac5fb/group_content?resourceVersion=id%3A800"
+            }
+          }
+        },
+        "menu_link": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "http://staging-costa-turismo.sdos-dev.tech/es/jsonapi/node/scity_route/0e52cb98-4453-4a75-be2a-c476bc5ac5fb/relationships/menu_link?resourceVersion=id%3A800"
+            },
+            "related": {
+              "href": "http://staging-costa-turismo.sdos-dev.tech/es/jsonapi/node/scity_route/0e52cb98-4453-4a75-be2a-c476bc5ac5fb/menu_link?resourceVersion=id%3A800"
+            }
+          }
+        },
+        "field_route_category": {
+          "data": {
+            "type": "taxonomy_term--route_category",
+            "id": "dbf324c4-8bec-4c85-88f1-9e84597baa50"
+          },
+          "links": {
+            "self": {
+              "href": "http://staging-costa-turismo.sdos-dev.tech/es/jsonapi/node/scity_route/0e52cb98-4453-4a75-be2a-c476bc5ac5fb/relationships/field_route_category?resourceVersion=id%3A800"
+            },
+            "related": {
+              "href": "http://staging-costa-turismo.sdos-dev.tech/es/jsonapi/node/scity_route/0e52cb98-4453-4a75-be2a-c476bc5ac5fb/field_route_category?resourceVersion=id%3A800"
+            }
+          }
+        },
+        "field_route_image": {
+          "data": {
+            "type": "file--file",
+            "id": "29cbd0aa-78e2-4d26-8075-3697a927aa73",
+            "meta": {
+              "alt": "",
+              "title": "",
+              "width": 200,
+              "height": 150
+            }
+          },
+          "links": {
+            "self": {
+              "href": "http://staging-costa-turismo.sdos-dev.tech/es/jsonapi/node/scity_route/0e52cb98-4453-4a75-be2a-c476bc5ac5fb/relationships/field_route_image?resourceVersion=id%3A800"
+            },
+            "related": {
+              "href": "http://staging-costa-turismo.sdos-dev.tech/es/jsonapi/node/scity_route/0e52cb98-4453-4a75-be2a-c476bc5ac5fb/field_route_image?resourceVersion=id%3A800"
+            }
+          }
+        },
+        "field_route_poi": {
+          "data": [],
+          "links": {
+            "self": {
+              "href": "http://staging-costa-turismo.sdos-dev.tech/es/jsonapi/node/scity_route/0e52cb98-4453-4a75-be2a-c476bc5ac5fb/relationships/field_route_poi?resourceVersion=id%3A800"
+            },
+            "related": {
+              "href": "http://staging-costa-turismo.sdos-dev.tech/es/jsonapi/node/scity_route/0e52cb98-4453-4a75-be2a-c476bc5ac5fb/field_route_poi?resourceVersion=id%3A800"
+            }
+          }
+        },
+        "field_shared_category": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "http://staging-costa-turismo.sdos-dev.tech/es/jsonapi/node/scity_route/0e52cb98-4453-4a75-be2a-c476bc5ac5fb/relationships/field_shared_category?resourceVersion=id%3A800"
+            },
+            "related": {
+              "href": "http://staging-costa-turismo.sdos-dev.tech/es/jsonapi/node/scity_route/0e52cb98-4453-4a75-be2a-c476bc5ac5fb/field_shared_category?resourceVersion=id%3A800"
+            }
+          }
+        },
+        "field_shared_images": {
+          "data": [],
+          "links": {
+            "self": {
+              "href": "http://staging-costa-turismo.sdos-dev.tech/es/jsonapi/node/scity_route/0e52cb98-4453-4a75-be2a-c476bc5ac5fb/relationships/field_shared_images?resourceVersion=id%3A800"
+            },
+            "related": {
+              "href": "http://staging-costa-turismo.sdos-dev.tech/es/jsonapi/node/scity_route/0e52cb98-4453-4a75-be2a-c476bc5ac5fb/field_shared_images?resourceVersion=id%3A800"
+            }
+          }
+        }
+      },
+      "links": {
+        "self": {
+          "href": "http://staging-costa-turismo.sdos-dev.tech/es/jsonapi/node/scity_route/0e52cb98-4453-4a75-be2a-c476bc5ac5fb?resourceVersion=id%3A800"
+        }
+      }
+    }
+  ],
+  "included": [
+    {
+      "type": "taxonomy_term--route_category",
+      "id": "dbf324c4-8bec-4c85-88f1-9e84597baa50",
+      "attributes": {
+        "drupal_internal__tid": 47,
+        "drupal_internal__revision_id": 47,
+        "langcode": "es",
+        "revision_created": null,
+        "revision_log_message": null,
+        "status": true,
+        "name": "Naturaleza",
+        "description": null,
+        "weight": 0,
+        "changed": "2019-03-12T11:27:46+00:00",
+        "default_langcode": true,
+        "revision_translation_affected": true,
+        "path": {
+          "alias": "/categoria-ruta/naturaleza",
+          "pid": 9547,
+          "langcode": "es"
+        },
+        "content_translation_source": "und",
+        "content_translation_outdated": false,
+        "content_translation_created": "2019-03-12T11:27:46+00:00"
+      },
+      "relationships": {
+        "vid": {
+          "data": {
+            "type": "taxonomy_vocabulary--taxonomy_vocabulary",
+            "id": "49c053c5-28d0-475d-9261-20fe61f08971"
+          },
+          "links": {
+            "self": {
+              "href": "http://staging-costa-turismo.sdos-dev.tech/es/jsonapi/taxonomy_term/route_category/dbf324c4-8bec-4c85-88f1-9e84597baa50/relationships/vid"
+            },
+            "related": {
+              "href": "http://staging-costa-turismo.sdos-dev.tech/es/jsonapi/taxonomy_term/route_category/dbf324c4-8bec-4c85-88f1-9e84597baa50/vid"
+            }
+          }
+        },
+        "revision_user": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "http://staging-costa-turismo.sdos-dev.tech/es/jsonapi/taxonomy_term/route_category/dbf324c4-8bec-4c85-88f1-9e84597baa50/relationships/revision_user"
+            },
+            "related": {
+              "href": "http://staging-costa-turismo.sdos-dev.tech/es/jsonapi/taxonomy_term/route_category/dbf324c4-8bec-4c85-88f1-9e84597baa50/revision_user"
+            }
+          }
+        },
+        "parent": {
+          "data": [
+            {
+              "type": "taxonomy_term--route_category",
+              "id": "virtual",
+              "meta": {
+                "links": {
+                  "help": {
+                    "href": "https://www.drupal.org/docs/8/modules/json-api/core-concepts#virtual",
+                    "meta": {
+                      "about": "Usage and meaning of the 'virtual' resource identifier."
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "links": {
+            "self": {
+              "href": "http://staging-costa-turismo.sdos-dev.tech/es/jsonapi/taxonomy_term/route_category/dbf324c4-8bec-4c85-88f1-9e84597baa50/relationships/parent"
+            },
+            "related": {
+              "href": "http://staging-costa-turismo.sdos-dev.tech/es/jsonapi/taxonomy_term/route_category/dbf324c4-8bec-4c85-88f1-9e84597baa50/parent"
+            }
+          }
+        },
+        "content_translation_uid": {
+          "data": {
+            "type": "user--user",
+            "id": "afb847d7-8b30-421f-94cd-ae6fe4c0c785"
+          },
+          "links": {
+            "self": {
+              "href": "http://staging-costa-turismo.sdos-dev.tech/es/jsonapi/taxonomy_term/route_category/dbf324c4-8bec-4c85-88f1-9e84597baa50/relationships/content_translation_uid"
+            },
+            "related": {
+              "href": "http://staging-costa-turismo.sdos-dev.tech/es/jsonapi/taxonomy_term/route_category/dbf324c4-8bec-4c85-88f1-9e84597baa50/content_translation_uid"
+            }
+          }
+        }
+      },
+      "links": {
+        "self": {
+          "href": "http://staging-costa-turismo.sdos-dev.tech/es/jsonapi/taxonomy_term/route_category/dbf324c4-8bec-4c85-88f1-9e84597baa50"
+        }
+      }
+    }
+  ],
+  "links": {
+    "next": {
+      "href": "http://staging-costa-turismo.sdos-dev.tech/es/jsonapi/node/scity_route?sort=title&page%5Boffset%5D=1&page%5Blimit%5D=1&include=field_route_category"
+    },
+    "self": {
+      "href": "http://staging-costa-turismo.sdos-dev.tech/es/jsonapi/node/scity_route?include=field_route_category&page%5Blimit%5D=1&page%5Boffset%5D=0&sort=title"
+    }
+  }
+}

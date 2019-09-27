@@ -107,52 +107,57 @@ open class GenericSession: Session {
                      to convertible: URLConvertible,
                      method: HTTPMethod = .post,
                      headers: HTTPHeaders? = nil,
-                     interceptor: RequestInterceptor? = nil) -> UploadRequest {
+                     interceptor: RequestInterceptor? = nil,
+                     fileManager: FileManager = .default) -> UploadRequest {
         return super.upload(data,
-                                   to: convertible,
-                                   method: method,
-                                   headers: customizeHTTPHeaders(headers),
-                                   interceptor: interceptor)
+                            to: convertible,
+                            method: method,
+                            headers: customizeHTTPHeaders(headers),
+                            interceptor: interceptor,
+                            fileManager: fileManager)
     }
     
     override open func upload(_ fileURL: URL,
-                     to convertible: URLConvertible,
-                     method: HTTPMethod = .post,
-                     headers: HTTPHeaders? = nil,
-                     interceptor: RequestInterceptor? = nil) -> UploadRequest {
+                              to convertible: URLConvertible,
+                              method: HTTPMethod = .post,
+                              headers: HTTPHeaders? = nil,
+                              interceptor: RequestInterceptor? = nil,
+                              fileManager: FileManager = .default) -> UploadRequest {
         return super.upload(fileURL,
                                    to: convertible,
                                    method: method,
                                    headers: customizeHTTPHeaders(headers),
-                                   interceptor: interceptor)
+                                   fileManager: fileManager)
     }
     
     override open func upload(_ stream: InputStream,
                      to convertible: URLConvertible,
                      method: HTTPMethod = .post,
                      headers: HTTPHeaders? = nil,
-                     interceptor: RequestInterceptor? = nil) -> UploadRequest {
+                     interceptor: RequestInterceptor? = nil,
+                     fileManager: FileManager = .default) -> UploadRequest {
         return super.upload(stream,
                                    to: convertible,
                                    method: method,
                                    headers: customizeHTTPHeaders(headers),
-                                   interceptor: interceptor)
+                                   interceptor: interceptor,
+                                   fileManager: fileManager)
     }
     
     override open func upload(multipartFormData: @escaping (MultipartFormData) -> Void,
-                     usingThreshold encodingMemoryThreshold: UInt64 = MultipartFormData.encodingMemoryThreshold,
-                     fileManager: FileManager = .default,
-                     to url: URLConvertible,
-                     method: HTTPMethod = .post,
-                     headers: HTTPHeaders? = nil,
-                     interceptor: RequestInterceptor? = nil) -> UploadRequest {
+                              to url: URLConvertible,
+                              usingThreshold encodingMemoryThreshold: UInt64 = MultipartFormData.encodingMemoryThreshold,
+                              method: HTTPMethod = .post,
+                              headers: HTTPHeaders? = nil,
+                              interceptor: RequestInterceptor? = nil,
+                              fileManager: FileManager = .default) -> UploadRequest {
         return super.upload(multipartFormData: multipartFormData,
-                                   usingThreshold: encodingMemoryThreshold,
-                                   fileManager: fileManager,
-                                   to: url,
-                                   method: method,
-                                   headers: customizeHTTPHeaders(headers),
-                                       interceptor: interceptor)
+                            to: url,
+                            usingThreshold: encodingMemoryThreshold,
+                            method: method,
+                            headers: customizeHTTPHeaders(headers),
+                            interceptor: interceptor,
+                            fileManager: fileManager)
     }
     
 }
