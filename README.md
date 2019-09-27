@@ -36,7 +36,7 @@ SDOSAlamofire ofrece una capa de integración con [Alamofire](https://github.com
 Usaremos [CocoaPods](https://cocoapods.org). Hay que añadir la dependencia al `Podfile`:
 
 ```ruby
-pod 'SDOSAlamofire', '~>0.9.6' 
+pod 'SDOSAlamofire', '~>0.10.0' 
 ```
 
 ## La librería
@@ -345,7 +345,7 @@ Con SDOSAlamofire podemos integrar un serializer para el parseo de las respuesta
 Usaremos [CocoaPods](https://cocoapods.org). Hay que añadir la dependencia al `Podfile`:
 
 ```ruby
-pod 'SDOSAlamofire/JSONAPI', '~>0.9.6'
+pod 'SDOSAlamofire/JSONAPI', '~>0.10.0'
 ```
 
 ## ResponseSerializer
