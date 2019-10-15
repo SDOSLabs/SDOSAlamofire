@@ -48,7 +48,7 @@ class ExampleViewController: UIViewController {
     }
     
     private func loadActionButton(loading: Bool = false, btnType: ButtonType) {
-        let spinner = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        let spinner = UIActivityIndicatorView(style: .gray)
         spinner.startAnimating()
         
         var index: Int = 0
@@ -56,7 +56,7 @@ class ExampleViewController: UIViewController {
         
         switch btnType {
         case .jsonapi:
-            index = (navigationItem.rightBarButtonItems?.index(of: jsonapiButton!))!
+            index = (navigationItem.rightBarButtonItems?.firstIndex(of: jsonapiButton!))!
             if loading {
                 jsonapiButton = UIBarButtonItem(customView: spinner)
             } else {
@@ -64,7 +64,7 @@ class ExampleViewController: UIViewController {
             }
             barItem = jsonapiButton!
         case .play:
-            index = (navigationItem.rightBarButtonItems?.index(of: playButton!))!
+            index = (navigationItem.rightBarButtonItems?.firstIndex(of: playButton!))!
             if loading {
                 playButton = UIBarButtonItem(customView: spinner)
             } else {

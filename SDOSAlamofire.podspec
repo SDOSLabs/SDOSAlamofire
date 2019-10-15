@@ -26,6 +26,6 @@ Pod::Spec.new do |spec|
     end
 
     spec.dependency 'Alamofire', '5.0.0-rc.2'
-    spec.dependency 'SDOSKeyedCodable', '~> 1.0.0'
+    spec.dependency 'SDOSKeyedCodable', '~> 1.1'
     spec.dependency 'SDOSSwiftExtension'
 end
