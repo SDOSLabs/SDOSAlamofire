@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (5.0.0-rc.2)
+  - Japx/Codable (2.1.0):
+    - Japx/Core
+  - Japx/Core (2.1.0)
   - OHHTTPStubs (6.1.0):
     - OHHTTPStubs/Default (= 6.1.0)
   - OHHTTPStubs/Core (6.1.0)
@@ -13,30 +16,32 @@ PODS:
   - OHHTTPStubs/NSURLSession (6.1.0):
     - OHHTTPStubs/Core
   - OHHTTPStubs/OHPathHelpers (6.1.0)
-  - SDOSAlamofire (0.9.7):
+  - SDOSAlamofire/Core (0.10.0):
     - Alamofire (= 5.0.0-rc.2)
-    - SDOSAlamofire/Core (= 0.9.7)
-    - SDOSKeyedCodable (~> 1.0.0)
+    - SDOSKeyedCodable (~> 1.1)
     - SDOSSwiftExtension
-  - SDOSAlamofire/Core (0.9.7):
+  - SDOSAlamofire/JSONAPI (0.10.0):
     - Alamofire (= 5.0.0-rc.2)
-    - SDOSKeyedCodable (~> 1.0.0)
+    - Japx/Codable
+    - SDOSAlamofire/Core
+    - SDOSKeyedCodable (~> 1.1)
     - SDOSSwiftExtension
-  - SDOSKeyedCodable (1.0.0):
-    - SDOSKeyedCodable/KeyedCodable (= 1.0.0)
-  - SDOSKeyedCodable/KeyedCodable (1.0.0)
-  - SDOSSwiftExtension (1.0.1):
-    - SDOSSwiftExtension/SwiftExtension (= 1.0.1)
-  - SDOSSwiftExtension/SwiftExtension (1.0.1)
+  - SDOSKeyedCodable (1.1.0):
+    - SDOSKeyedCodable/KeyedCodable (= 1.1.0)
+  - SDOSKeyedCodable/KeyedCodable (1.1.0)
+  - SDOSSwiftExtension (1.0.2):
+    - SDOSSwiftExtension/SwiftExtension (= 1.0.2)
+  - SDOSSwiftExtension/SwiftExtension (1.0.2)
 
 DEPENDENCIES:
   - OHHTTPStubs
-  - SDOSAlamofire (from `../../`)
+  - SDOSAlamofire/JSONAPI (from `../../`)
   - SDOSKeyedCodable
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - Japx
     - OHHTTPStubs
   https://github.com/SDOSLabs/cocoapods-specs.git:
     - SDOSKeyedCodable
@@ -48,11 +53,12 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: f9450d3c7f6bea2ad62e7a541c3e9b186c7991d6
+  Japx: 4fbfa9c85c0d89e93d011b7ef55625a3de6a445e
   OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
-  SDOSAlamofire: 5ec220e45fadaddb398169894568fb9f41164814
-  SDOSKeyedCodable: 4b4f11f9a2d08292fb263fc94812e2909850123c
-  SDOSSwiftExtension: b3843ac416b90d1ac0806683c0730affadeef39d
+  SDOSAlamofire: 7c97d5a791fb5cd245996a2ca462164c9ff5dff0
+  SDOSKeyedCodable: d3000d49209f86aac7e29a39303c95cec38c7c7c
+  SDOSSwiftExtension: 6f9bd03dd6c1a6a70b5f60cd7cc470790aee3625
 
-PODFILE CHECKSUM: b3381db6541e0118fd54c036215ffe7e8398c044
+PODFILE CHECKSUM: 547e55e931da7790727ddd802174d1aa688a7f89
 
-COCOAPODS: 1.7.1
+COCOAPODS: 1.7.5
