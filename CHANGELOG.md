@@ -1,3 +1,9 @@
+## [0.10.1 Change Alamofire verision and add Serializer JSONAPI](https://github.com/SDOSLabs/SDOSAlamofire/tree/v0.10.1)
+
+- Adaptación a Alamofire 5.0.0 RC_2, por lo que se ha eliminado SDOSAFError
+- Añadida propiedad `errorDTO` a AFError para acceder al objeto de error parseado en caso de fallo en la petición
+- Añadida la dependencia `SDOSAlamofire/JSONAPI` con el serializador `SDOSJSONAPIResponseSerializer` para el tratado de las peticiones JSON:API.
+
 ## [0.10.0 Change Alamofire verision and add Serializer JSONAPI](https://github.com/SDOSLabs/SDOSAlamofire/tree/v0.10.0)
 
 - Adaptación a Alamofire 5.0.0 RC_2, por lo que se ha eliminado SDOSAFError
