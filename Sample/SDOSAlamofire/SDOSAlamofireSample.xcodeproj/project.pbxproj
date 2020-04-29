@@ -589,6 +589,7 @@
 				DEVELOPMENT_TEAM = Y5G9RYLF8Y;
 				INFOPLIST_FILE = "$(SRCROOT)/App/Configuration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = es.sdos.sdosalamofire.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -610,6 +611,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/App/Configuration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = es.sdos.sdosalamofire.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";

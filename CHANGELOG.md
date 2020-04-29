@@ -1,4 +1,4 @@
-## HEAD
+## [1.0.0 Stable version](https://github.com/SDOSLabs/SDOSAlamofire/tree/v1.0.0)
 
 - Change dependency of Alamofire for use the stable version 5.1.0
 
