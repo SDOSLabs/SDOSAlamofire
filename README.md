@@ -36,7 +36,7 @@ SDOSAlamofire ofrece una capa de integración con [Alamofire](https://github.com
 Usaremos [CocoaPods](https://cocoapods.org). Hay que añadir la dependencia al `Podfile`:
 
 ```ruby
-pod 'SDOSAlamofire', '~>0.10.0' 
+pod 'SDOSAlamofire', '~>1.0.0' 
 ```
 
 ## La librería
@@ -322,7 +322,7 @@ AF.request(strURL, method: .post, parameters: parameters, encoding: JSONEncoding
 
 ## Dependencias
 
-* [Alamofire](https://github.com/Alamofire/Alamofire) 5.0.0-rc.2
+* [Alamofire](https://github.com/Alamofire/Alamofire) - 5.1.0
 * [SDOSSwiftExtension](https://kc.sdos.es/x/DALLAQ)
 
 ## Referencias
@@ -345,7 +345,7 @@ Con SDOSAlamofire podemos integrar un serializer para el parseo de las respuesta
 Usaremos [CocoaPods](https://cocoapods.org). Hay que añadir la dependencia al `Podfile`:
 
 ```ruby
-pod 'SDOSAlamofire/JSONAPI', '~>0.10.0'
+pod 'SDOSAlamofire/JSONAPI', '~>1.0.0'
 ```
 
 ## ResponseSerializer
