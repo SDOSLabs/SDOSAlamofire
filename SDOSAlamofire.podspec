@@ -1,4 +1,4 @@
-@version = "0.10.1"
+@version = "1.0.0"
 Pod::Spec.new do |spec|
     spec.platform     = :ios, '10.0'
     spec.name         = 'SDOSAlamofire'
@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
         s1.dependency 'Japx/Codable'
     end
 
-    spec.dependency 'Alamofire', '5.0.0-rc.2'
-    spec.dependency 'SDOSKeyedCodable', '~> 1.1'
+    spec.dependency 'Alamofire', '>= 5.1.0'
+    spec.dependency 'SDOSKeyedCodable', '>= 1.1'
     spec.dependency 'SDOSSwiftExtension'
 end

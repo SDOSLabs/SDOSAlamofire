@@ -9,7 +9,7 @@ use_frameworks!
 
 def shared_pods
     pod 'SDOSAlamofire/JSONAPI', :path => '../../', :inhibit_warnings => false
-  	pod 'OHHTTPStubs'
+  	pod 'OHHTTPStubs', '6.1.0'
   	pod 'SDOSKeyedCodable'
 end
 

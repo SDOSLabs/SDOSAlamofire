@@ -1,3 +1,7 @@
+## [1.0.0 Stable version](https://github.com/SDOSLabs/SDOSAlamofire/tree/v1.0.0)
+
+- Change dependency of Alamofire for use the stable version 5.1.0
+
 ## [0.10.1 Change Alamofire verision and add Serializer JSONAPI](https://github.com/SDOSLabs/SDOSAlamofire/tree/v0.10.1)
 
 - Adaptación a Alamofire 5.0.0 RC_2, por lo que se ha eliminado SDOSAFError
