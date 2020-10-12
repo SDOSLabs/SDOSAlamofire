@@ -1,18 +1,27 @@
 - [SDOSAlamofire](#sdosalamofire)
-    - [Introducción](#introducción)
-    - [Instalación](#instalación)
-        - [Cocoapods](#cocoapods)
-    - [La librería](#la-librería)
-        - [Qué hay en SDOSAlamofire](#qué-hay-en-sdosalamofire)
-        - [Cómo usar SDOSAlamofire](#cómo-usar-sdosalamofire)
-        - [Ejemplos de peticiones con SDOSAlamofire](#ejemplos-de-peticiones-con-sdosalamofire)
-    - [Proyecto de ejemplo](#proyecto-de-ejemplo)
-    - [Dependencias](#dependencias)
-    - [Referencias](#referencias)
+  - [Introducción](#introducci%c3%b3n)
+  - [Instalación](#instalaci%c3%b3n)
+    - [Cocoapods](#cocoapods)
+  - [La librería](#la-librer%c3%ada)
+    - [Qué hay en SDOSAlamofire](#qu%c3%a9-hay-en-sdosalamofire)
+    - [Cómo usar SDOSAlamofire](#c%c3%b3mo-usar-sdosalamofire)
+    - [Ejemplos de peticiones con SDOSAlamofire](#ejemplos-de-peticiones-con-sdosalamofire)
+  - [Proyecto de ejemplo](#proyecto-de-ejemplo)
+  - [Dependencias](#dependencias)
+  - [Referencias](#referencias)
+- [SDOSAlamofire+JSONAPI](#sdosalamofirejsonapi)
+  - [Introducción](#introducci%c3%b3n-1)
+  - [Instalación](#instalaci%c3%b3n-1)
+    - [Cocoapods](#cocoapods-1)
+  - [ResponseSerializer](#responseserializer)
+    - [SDOSJSONAPIResponseSerializer](#sdosjsonapiresponseserializer)
+    - [Modelos](#modelos)
+    - [Ejemplo](#ejemplo)
+  - [Dependencias](#dependencias-1)
 
 # SDOSAlamofire
 
-- Para consultar los últimos cambios en la librería consultar el [CHANGELOG.md](https://svrgitpub.sdos.es/iOS/SDOSAlamofire/blob/master/CHANGELOG.md).
+- Para consultar los últimos cambios en la librería consultar el [CHANGELOG.md](https://github.com/SDOSLabs/SDOSAlamofire/blob/master/CHANGELOG.md).
 
 - Enlace confluence: https://kc.sdos.es/x/OQLLAQ
 
@@ -27,7 +36,7 @@ SDOSAlamofire ofrece una capa de integración con [Alamofire](https://github.com
 Usaremos [CocoaPods](https://cocoapods.org). Hay que añadir la dependencia al `Podfile`:
 
 ```ruby
-pod 'SDOSAlamofire', '~>0.9.6' 
+pod 'SDOSAlamofire', '~>1.0.0' 
 ```
 
 ## La librería
@@ -130,17 +139,14 @@ SDOSAlamofire consta de:
         * Solo si ese código de respuesta es válido, intenta realizar el parseo de la misma con el tipo `R`.
     * Igualmente, es posible modificar los códigos de respuesta que se consideran aceptables (esto no depende del response serializer). Para ello, la validación de la request debe hacerse con el método `validate` del `DataRequest` (de Alamofire) que recibe el parámetro `acceptableStatusCodes`.
 
-4. **`SDOSAFError`**: SDOSAlamofire añade un nuevo tipo de error, `SDOSAFError`.
+    
+4. **`AFError`'s `errorDTO`**: SDOSAlamofire añade la propiedad `errorDTO` al tipo de error de Alamofire (`AFError`) para acceder rápidamente al objeto DTO error de parseo.
     
     ```js
-    public enum SDOSAFError : Error {
-        case badErrorResponse(code: Int)
+    public extension AFError {
+        var errorDTO: AbstractErrorDTO?
     }
     ```
-
-    * Este error se lanzará en los siguientes casos concretos:
-        * Cuando, usando el `SDOSJSONResponseSerializer`, el código de respuesta de la petición web es de error pero no es posible parsear el JSON de respuesta con el tipo proporcionado `R`. Esto puede darse cuando la petición web devuelve un error 500 pues, en este caso, es común que la respuesta sea un texto XML con la traza del error del servidor.
-        * Cuando, usando el `SDOSHTTPErrorJSONResponseSerializer`, el código de respuesta de la petición web es de error pero, o bien no es posible parsear el JSON de respuesta como error o bien el método `isError()` del error parseado devuelve `false`.
 
 5.  **Extensión de `DataRequest`** para el uso de los response serializers anteriores. 
     
@@ -311,12 +317,12 @@ AF.request(strURL, method: .post, parameters: parameters, encoding: JSONEncoding
 
 ## Proyecto de ejemplo
 
-* Descargar el proyecto SDOSAlamofire desde el siguiente enlace: https://svrgitpub.sdos.es/iOS/SDOSAlamofire.
+* Descargar el proyecto SDOSAlamofire desde el siguiente enlace: https://github.com/SDOSLabs/SDOSAlamofire.
 * Comprobar que, al pulsar el botón **Ver ejemplo** se muestra una app que permite simular llamadas a un servicio. Podemos elegir diversos parámetros para modificar la llamada al servicio
 
 ## Dependencias
 
-* [Alamofire](https://github.com/Alamofire/Alamofire) 5.0.0-beta-6
+* [Alamofire](https://github.com/Alamofire/Alamofire) - 5.1.0
 * [SDOSSwiftExtension](https://kc.sdos.es/x/DALLAQ)
 
 ## Referencias
@@ -324,4 +330,121 @@ AF.request(strURL, method: .post, parameters: parameters, encoding: JSONEncoding
 * [Alamofire](https://github.com/Alamofire/Alamofire)
 * [SDOSKeyedCodable](https://kc.sdos.es/x/FALLAQ)
 * [PromiseKit](https://github.com/mxcl/PromiseKit)
-* https://svrgitpub.sdos.es/iOS/SDOSAlamofire
+* https://github.com/SDOSLabs/SDOSAlamofire
+
+# SDOSAlamofire+JSONAPI
+
+## Introducción
+
+Con SDOSAlamofire podemos integrar un serializer para el parseo de las respuestas de los servicios web con una estructura [JSON:API](https://jsonapi.org).
+
+## Instalación
+
+### Cocoapods
+
+Usaremos [CocoaPods](https://cocoapods.org). Hay que añadir la dependencia al `Podfile`:
+
+```ruby
+pod 'SDOSAlamofire/JSONAPI', '~>1.0.0'
+```
+
+## ResponseSerializer
+
+### SDOSJSONAPIResponseSerializer
+
+**`SDOSJSONAPIResponseSerializer`**: es el serializador que se usará para parsear los servicios que vengan con estructura JSONAPI.
+
+```js
+public class SDOSJSONAPIResponseSerializer<R: Decodable, E: AbstractErrorDTO>: ResponseSerializer {
+    public init(includeList: String? = nil, keyPath: String? = JSONAPI.rootPath)
+}
+    
+* Parámetros:
+    * `includeList`: Lista de includes para la deserialización de relaciones de JSON:API.
+    * `keyPath`: Raiz del JSON para su decodificación.
+```
+
+### Modelos
+
+Los modelos de datos son iguales que los modelos que usamos para **`SDOSJSONResponseSerializer`**:
+
+```js
+public struct RouteDTO: GenericDTO {
+    var type: String?
+    var id: String?
+    var title: String?
+    var body: String?
+    var category: CategoryDTO? //Include
+    
+    mutating public func map(map: KeyMap) throws {
+        try type <-> map["type"]
+        try id <-> map["id"]
+        try title <-> map["title"]
+        try body <-> map["body.value"]
+        try category <<- map["field_route_category"]
+    }
+    
+    public init(from decoder: Decoder) throws {
+        try KeyedDecoder(with: decoder).decode(to: &self)
+    }
+}
+
+struct CategoryDTO: GenericDTO {
+    var type: String?
+    var id: String?
+    var name: String?
+    
+    mutating func map(map: KeyMap) throws {
+        try type <-> map["type"]
+        try id <-> map["id"]
+        try name <-> map["name"]
+    }
+    
+    init(from decoder: Decoder) throws {
+        try KeyedDecoder(with: decoder).decode(to: &self)
+    }
+}
+```
+
+### Ejemplo
+
+La forma de usar **`SDOSJSONAPIResponseSerializer`** es similar a **`SDOSJSONResponseSerializer`**:
+
+```js
+fileprivate lazy var session = GenericSession()
+
+func loadRoutes() -> RequestValue<Promise<[RouteBO]>> {
+
+    var url = "https://staging-costa-turismo.sdos-dev.tech/es/jsonapi/node/scity_route?sort=title&page[offset]=0&page[limit]=1&include=field_route_category"
+    let responseSerializer = SDOSJSONAPIResponseSerializer<[RouteDTO], ErrorDTO>()
+    let request = session.request(url, method: .get, parameters: nil)
+
+    let promise = Promise<[RouteBO]> { seal in
+        request.validate().responseJSONAPI(responseSerializer: responseSerializer) {
+            (dataResponse: DataResponse<[RouteDTO]>) in
+            switch dataResponse.result {
+            case .success(let routesList):
+                seal.fulfill(routesList)
+            case .failure(let error as AFError):
+                switch error {
+                case .explicitlyCancelled, .sessionDeinitialized:
+                    seal.reject(PMKError.cancelled)
+                default:
+                    seal.reject(error)
+                }
+            case .failure(let error):
+                seal.reject(error)
+            }
+        }
+        }.map { items -> [RouteBO] in
+            items
+    }
+
+    return RequestValue(request: request, value: promise)
+}
+```
+
+## Dependencias
+
+* [SDOSAlamofire](https://github.com/SDOSLabs/SDOSAlamofire)
+* [Japx/Codable](https://github.com/infinum/Japx) 2.1.0

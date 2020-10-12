@@ -34,5 +34,6 @@ struct Constants {
     
     struct WS {
         static let wsUserURL = "http://prueba.es"
+        static let wsJSONAPIURL = "https://staging-costa-turismo.sdos-dev.tech/es/jsonapi/node/scity_route?sort=title&page[offset]=0&page[limit]=1&include=field_route_category"
     }
 }

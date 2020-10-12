@@ -14,7 +14,7 @@ class InitialViewController: UIViewController {
     //MARK: - Properties
     
     lazy fileprivate var spinner: UIActivityIndicatorView = {
-        let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        let activityIndicator = UIActivityIndicatorView(style: .gray)
         activityIndicator.hidesWhenStopped = true
         return activityIndicator
     }()

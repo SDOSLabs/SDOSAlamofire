@@ -8,9 +8,15 @@
 
 import UIKit
 
+enum ButtonType {
+    case jsonapi, play
+}
+
 class ExampleViewController: UIViewController {
     
     static let infoSegueIdentifier = "showInfoSegueIdentifier"
+    var jsonapiButton: UIBarButtonItem?
+    var playButton: UIBarButtonItem?
 
     @IBOutlet weak var tableView: UITableView! {
         didSet {
@@ -29,26 +35,61 @@ class ExampleViewController: UIViewController {
     
     private func loadStyle() {
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(back(_ :)))
-        loadActionButton()
+        jsonapiButton = UIBarButtonItem(customView: getButtonForJSONAPI())
+        playButton = UIBarButtonItem(barButtonSystemItem: .play, target: self, action: #selector(makeWSCall(_ :)))
+        navigationItem.rightBarButtonItems = ([playButton, jsonapiButton] as! [UIBarButtonItem])
     }
     
-    private func loadActionButton(loading: Bool = false) {
-        let btnItem: UIBarButtonItem
-        if loading {
-            let spinner = UIActivityIndicatorView(activityIndicatorStyle: .gray)
-            spinner.startAnimating()
-            btnItem = UIBarButtonItem(customView: spinner)
-        } else {
-            btnItem = UIBarButtonItem(barButtonSystemItem: .play, target: self, action: #selector(makeWSCall(_ :)))
+    private func getButtonForJSONAPI() -> UIButton {
+        let button = UIButton(type: .system)
+        button.setTitle("JSON:API", for: .normal)
+        button.addTarget(self, action: #selector(makeJSONAPIWSCall(_ :)), for: .touchUpInside)
+        return button
+    }
+    
+    private func loadActionButton(loading: Bool = false, btnType: ButtonType) {
+        let spinner = UIActivityIndicatorView(style: .gray)
+        spinner.startAnimating()
+        
+        var index: Int = 0
+        var barItem: UIBarButtonItem
+        
+        switch btnType {
+        case .jsonapi:
+            index = (navigationItem.rightBarButtonItems?.firstIndex(of: jsonapiButton!))!
+            if loading {
+                jsonapiButton = UIBarButtonItem(customView: spinner)
+            } else {
+                jsonapiButton = UIBarButtonItem(customView: getButtonForJSONAPI())
+            }
+            barItem = jsonapiButton!
+        case .play:
+            index = (navigationItem.rightBarButtonItems?.firstIndex(of: playButton!))!
+            if loading {
+                playButton = UIBarButtonItem(customView: spinner)
+            } else {
+                playButton = UIBarButtonItem(barButtonSystemItem: .play, target: self, action: #selector(makeWSCall(_ :)))
+            }
+            barItem = playButton!
         }
-        navigationItem.rightBarButtonItem = btnItem
+        
+        navigationItem.rightBarButtonItems![index] = barItem
     }
     
     @objc func makeWSCall(_ sender: Any?) {
         LoggingViewManager.cleanLogView()
-        loadActionButton(loading: true)
+        loadActionButton(loading: true, btnType: .play)
         WS.makeWSCall(configuration: currentConfiguration) {
-            self.loadActionButton()
+            self.loadActionButton(btnType: .play)
+            LoggingViewManager.presentLoggingView(in: self)
+        }
+    }
+    
+    @objc func makeJSONAPIWSCall(_ sender: Any?) {
+        LoggingViewManager.cleanLogView()
+        loadActionButton(loading: true, btnType: .jsonapi)
+        JSONAPI.makeWSCall {
+            self.loadActionButton(btnType: .jsonapi)
             LoggingViewManager.presentLoggingView(in: self)
         }
     }

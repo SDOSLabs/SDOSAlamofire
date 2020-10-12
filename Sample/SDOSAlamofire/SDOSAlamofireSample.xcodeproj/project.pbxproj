@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		298EE44622E5864000D0A590 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 298EE44522E5864000D0A590 /* SwiftPackageProductDependency */; };
 		5C0FB1692223D81D00F4D291 /* Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5C0FB1672223D81D00F4D291 /* Shared.xcconfig */; };
 		5C4BBDAC220C22C200337368 /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4BBDAB220C22C200337368 /* UserDTO.swift */; };
 		5C4BBDB1220C23A700337368 /* MalformedJSON.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5C4BBDAF220C23A700337368 /* MalformedJSON.txt */; };
@@ -29,14 +28,15 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		C8DE5C0E7EE1521AA5377B5E /* Pods_SDOSAlamofireSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E55F5DABF28B14A5E90200 /* Pods_SDOSAlamofireSample.framework */; };
+		710C18A7233BA2A700B7CBF9 /* JSONAPIDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710C18A6233BA2A700B7CBF9 /* JSONAPIDTO.swift */; };
+		7127BE24233CBDD2003097EF /* JSONAPI.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7127BE23233CBDD2003097EF /* JSONAPI.txt */; };
+		C6DE5A81A1DFE67E12754051 /* Pods_SDOSAlamofireSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6917474EE16C4B7CC0F00300 /* Pods_SDOSAlamofireSample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		14E55F5DABF28B14A5E90200 /* Pods_SDOSAlamofireSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDOSAlamofireSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29515D4F22A918270025550B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		29515D5022A918270025550B /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../../CHANGELOG.md; sourceTree = "<group>"; };
-		508902DE3F6A531193B0586C /* Pods-SDOSAlamofireSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDOSAlamofireSample.release.xcconfig"; path = "Target Support Files/Pods-SDOSAlamofireSample/Pods-SDOSAlamofireSample.release.xcconfig"; sourceTree = "<group>"; };
+		3E905E76770C2341312372CF /* Pods-SDOSAlamofireSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDOSAlamofireSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDOSAlamofireSample/Pods-SDOSAlamofireSample.release.xcconfig"; sourceTree = "<group>"; };
 		5C0FB1662223D81D00F4D291 /* App.debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = App.debug.xcconfig; sourceTree = "<group>"; };
 		5C0FB1672223D81D00F4D291 /* Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		5C0FB16A2223D84D00F4D291 /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
@@ -65,7 +65,10 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		CAEA76254952DAEC7164B03F /* Pods-SDOSAlamofireSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDOSAlamofireSample.debug.xcconfig"; path = "Target Support Files/Pods-SDOSAlamofireSample/Pods-SDOSAlamofireSample.debug.xcconfig"; sourceTree = "<group>"; };
+		6917474EE16C4B7CC0F00300 /* Pods_SDOSAlamofireSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDOSAlamofireSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		710C18A6233BA2A700B7CBF9 /* JSONAPIDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONAPIDTO.swift; sourceTree = "<group>"; };
+		7127BE23233CBDD2003097EF /* JSONAPI.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JSONAPI.txt; sourceTree = "<group>"; };
+		86C25FCD2133A9F9A082B31A /* Pods-SDOSAlamofireSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDOSAlamofireSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDOSAlamofireSample/Pods-SDOSAlamofireSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,20 +76,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				298EE44622E5864000D0A590 /* BuildFile in Frameworks */,
-				C8DE5C0E7EE1521AA5377B5E /* Pods_SDOSAlamofireSample.framework in Frameworks */,
+				C6DE5A81A1DFE67E12754051 /* Pods_SDOSAlamofireSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4E0E375E804B2FC6CE313311 /* Frameworks */ = {
+		4FB35BD6DBF7DCFDAC5EA28A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				14E55F5DABF28B14A5E90200 /* Pods_SDOSAlamofireSample.framework */,
+				86C25FCD2133A9F9A082B31A /* Pods-SDOSAlamofireSample.debug.xcconfig */,
+				3E905E76770C2341312372CF /* Pods-SDOSAlamofireSample.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		5C0B794A22117C1300969C30 /* DTO */ = {
@@ -94,6 +97,7 @@
 			children = (
 				5C4BBDAB220C22C200337368 /* UserDTO.swift */,
 				5CCCB7CE2225975200F5DBD5 /* ErrorDTO.swift */,
+				710C18A6233BA2A700B7CBF9 /* JSONAPIDTO.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -128,6 +132,7 @@
 		5C0FB1642223D7B800F4D291 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				7127BE23233CBDD2003097EF /* JSONAPI.txt */,
 				5C4BBDAF220C23A700337368 /* MalformedJSON.txt */,
 				5C4BBDB0220C23A700337368 /* Example0.txt */,
 				5C6228B2222D188E00032572 /* JSON.swift */,
@@ -226,8 +231,8 @@
 				29515D4F22A918270025550B /* README.md */,
 				607FACD21AFB9204008FA782 /* App */,
 				607FACD11AFB9204008FA782 /* Products */,
-				BD6E690A2D0D2A9BDE966345 /* Pods */,
-				4E0E375E804B2FC6CE313311 /* Frameworks */,
+				4FB35BD6DBF7DCFDAC5EA28A /* Pods */,
+				8412B7B234F553A3289AF173 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -263,14 +268,12 @@
 			path = Configuration;
 			sourceTree = "<group>";
 		};
-		BD6E690A2D0D2A9BDE966345 /* Pods */ = {
+		8412B7B234F553A3289AF173 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CAEA76254952DAEC7164B03F /* Pods-SDOSAlamofireSample.debug.xcconfig */,
-				508902DE3F6A531193B0586C /* Pods-SDOSAlamofireSample.release.xcconfig */,
+				6917474EE16C4B7CC0F00300 /* Pods_SDOSAlamofireSample.framework */,
 			);
-			name = Pods;
-			path = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,21 +283,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "SDOSAlamofireSample" */;
 			buildPhases = (
-				60449EAACCDB01DA7250199C /* [CP] Check Pods Manifest.lock */,
+				61787A5E5FC964CD98145BB8 /* [CP] Check Pods Manifest.lock */,
 				5CC7B7252243E7420034969C /* XcodeVersion */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				57655E18DA3A113A47AA4116 /* [CP] Embed Pods Frameworks */,
+				B37CB0C78BA33FE47BE2D998 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SDOSAlamofireSample;
-			packageProductDependencies = (
-				298EE44522E5864000D0A590 /* SwiftPackageProductDependency */,
-			);
 			productName = SDOSAlamofire;
 			productReference = 607FACD01AFB9204008FA782 /* SDOSAlamofireSample.app */;
 			productType = "com.apple.product-type.application";
@@ -327,9 +327,6 @@
 				Base,
 			);
 			mainGroup = 607FACC71AFB9204008FA782;
-			packageReferences = (
-				298EE44422E5864000D0A590 /* RemoteSwiftPackageReference */,
-			);
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -349,6 +346,7 @@
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				5CCCB7D62225A4F800F5DBD5 /* Localizable.strings in Resources */,
 				5C4BBDB1220C23A700337368 /* MalformedJSON.txt in Resources */,
+				7127BE24233CBDD2003097EF /* JSONAPI.txt in Resources */,
 				5C0FB1692223D81D00F4D291 /* Shared.xcconfig in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -357,23 +355,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		57655E18DA3A113A47AA4116 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SDOSAlamofireSample/Pods-SDOSAlamofireSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SDOSAlamofireSample/Pods-SDOSAlamofireSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SDOSAlamofireSample/Pods-SDOSAlamofireSample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5CC7B7252243E7420034969C /* XcodeVersion */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -392,7 +373,7 @@
 			shellPath = /bin/sh;
 			shellScript = "file=\"$SRCROOT/XcodeVersion.properties\"\n\n# create file if it does not exist\ntouch \"${file}\"\n\n# if file does not exist or it is not readable -> error\nif [ ! -r \"${file}\" ]\nthen\necho \"error: Could not create file: ${file} (see the Xcode Version script in Build Phases)\"\nerror -1\nfi\n# read the keys and values in the file\nwhile IFS='=' read -r key value\ndo\neval \"${key}='${value}'\"\ndone < \"${file}\"\n\n# if not defined the keys: XCODE_VERSION_MAJOR_REQUIRED, XCODE_VERSION_MINOR_REQUIRED, XCODE_VERSION_ACTUAL_REQUIRED\nif ([ -z ${XCODE_VERSION_MAJOR_REQUIRED:+\"1\"} ] || [ -z ${XCODE_VERSION_MINOR_REQUIRED:+\"1\"} ] || [ -z ${XCODE_VERSION_ACTUAL_REQUIRED:+\"1\"} ])\nthen\necho \"XCODE_VERSION_MAJOR_REQUIRED=${XCODE_VERSION_MAJOR}\" > \"${file}\"\necho \"XCODE_VERSION_MINOR_REQUIRED=${XCODE_VERSION_MINOR}\" >> \"${file}\"\necho \"XCODE_VERSION_ACTUAL_REQUIRED=${XCODE_VERSION_ACTUAL}\" >> \"${file}\"\n\necho \"warning: Required Xcode version set to ${XCODE_VERSION_ACTUAL} in this project. If you want to build this project with a different version of Xcode, please remove XcodeVersion.properties file\"\nelif [ ${XCODE_VERSION_MAJOR_REQUIRED} != ${XCODE_VERSION_MAJOR} ]\nthen\necho \"error: The required version of Xcode to run this project is ${XCODE_VERSION_MAJOR_REQUIRED} and the current version of Xcode is ${XCODE_VERSION_MAJOR}. If you want to build this project with a different version of Xcode, please remove XcodeVersion.properties file\"\nerror 0\nelif ([ ${XCODE_VERSION_MINOR_REQUIRED} != ${XCODE_VERSION_MINOR} ] || [ ${XCODE_VERSION_ACTUAL_REQUIRED} != ${XCODE_VERSION_ACTUAL} ])\nthen\necho \"warning: XCODE VERSION CONFLICT: The required version of Xcode to run this project is ${XCODE_VERSION_ACTUAL_REQUIRED} and the current version of Xcode is ${XCODE_VERSION_ACTUAL}. This might cause some problems at runtime.\"\nfi\n";
 		};
-		60449EAACCDB01DA7250199C /* [CP] Check Pods Manifest.lock */ = {
+		61787A5E5FC964CD98145BB8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -414,6 +395,34 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B37CB0C78BA33FE47BE2D998 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SDOSAlamofireSample/Pods-SDOSAlamofireSample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Japx/Japx.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
+				"${BUILT_PRODUCTS_DIR}/SDOSAlamofire/SDOSAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDOSKeyedCodable/SDOSKeyedCodable.framework",
+				"${BUILT_PRODUCTS_DIR}/SDOSSwiftExtension/SDOSSwiftExtension.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Japx.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDOSAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDOSKeyedCodable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDOSSwiftExtension.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SDOSAlamofireSample/Pods-SDOSAlamofireSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -424,6 +433,7 @@
 				5C4BBDBB220C274600337368 /* Constants.swift in Sources */,
 				5C6228B3222D188E00032572 /* JSON.swift in Sources */,
 				5CCCB7E22226B2D400F5DBD5 /* InfoModel.swift in Sources */,
+				710C18A7233BA2A700B7CBF9 /* JSONAPIDTO.swift in Sources */,
 				5CCCB7D12225A31600F5DBD5 /* InitialViewController.swift in Sources */,
 				5CCCB7DD2226752F00F5DBD5 /* ExampleModel.swift in Sources */,
 				5CCCB7E0222687CE00F5DBD5 /* WS.swift in Sources */,
@@ -564,25 +574,22 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CAEA76254952DAEC7164B03F /* Pods-SDOSAlamofireSample.debug.xcconfig */;
+			baseConfigurationReference = 86C25FCD2133A9F9A082B31A /* Pods-SDOSAlamofireSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = Y5G9RYLF8Y;
 				INFOPLIST_FILE = "$(SRCROOT)/App/Configuration/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = es.sdos.sdosalamofire.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -590,30 +597,28 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "App/SDOSAlamofireSample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 508902DE3F6A531193B0586C /* Pods-SDOSAlamofireSample.release.xcconfig */;
+			baseConfigurationReference = 3E905E76770C2341312372CF /* Pods-SDOSAlamofireSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/App/Configuration/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = es.sdos.sdosalamofire.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "App/SDOSAlamofireSample-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -639,25 +644,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		298EE44422E5864000D0A590 /* RemoteSwiftPackageReference */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@svrgitpub.sdos.es:iOS/SDOSAlamofire.git";
-			requirement = {
-				branch = feature/spm;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		298EE44522E5864000D0A590 /* SwiftPackageProductDependency */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 298EE44422E5864000D0A590 /* RemoteSwiftPackageReference */;
-			productName = SDOSAlamofire;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
 }

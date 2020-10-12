@@ -1,4 +1,4 @@
-source 'http://svrgitpub.sdos.es/ios/cocoapods-specs.git'
+source 'https://github.com/SDOSLabs/cocoapods-specs.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
 platform :ios, '10.0'
@@ -7,7 +7,9 @@ use_frameworks!
 inhibit_all_warnings!
 
 def shared_pods
-  	pod 'OHHTTPStubs'
+    pod 'SDOSAlamofire/JSONAPI', :path => '../../', :inhibit_warnings => false
+  	pod 'OHHTTPStubs', '6.1.0'
+  	pod 'SDOSKeyedCodable'
 end
 
 target 'SDOSAlamofireSample' do
