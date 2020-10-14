@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "Japx",
+        "repositoryURL": "https://github.com/SDOSLabs/Japx.git",
+        "state": {
+          "branch": "feature/spm",
+          "revision": "e6fc97e83672fa2530c773236dd8a3c86170dfd4",
+          "version": null
+        }
+      },
+      {
         "package": "Moya",
         "repositoryURL": "https://github.com/Moya/Moya.git",
         "state": {

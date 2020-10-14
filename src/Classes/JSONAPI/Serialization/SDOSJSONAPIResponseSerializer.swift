@@ -7,11 +7,15 @@
 
 import Foundation
 import Alamofire
-#if canImport(JapxCodable)
-import JapxCodable
-#endif
+
+//Import when install with cocoapods
 #if canImport(Japx)
 import Japx
+#endif
+
+//Import when install with SPM
+#if canImport(JapxCodable)
+import JapxCodable
 #endif
 #if canImport(SDOSAlamofire)
 import SDOSAlamofire

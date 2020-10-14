@@ -10,7 +10,7 @@ import Foundation
 import SDOSAlamofire
 import Alamofire
 import SDOSKeyedCodable
-#if canImport(SDOSAlamofireJSONAPI)
+#if !COCOAPODS
 import SDOSAlamofireJSONAPI
 #endif
 

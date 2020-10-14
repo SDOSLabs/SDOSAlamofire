@@ -17,8 +17,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.2.0")),
-        //        .package(url: "https://github.com/SDOSLabs/Japx.git", .branch("feature/spm")),
-        .package(path: "../Japx"),
+        .package(url: "https://github.com/SDOSLabs/Japx.git", .branch("feature/spm")),
         .package(url: "https://github.com/SDOSLabs/SDOSKeyedCodable.git", .branch("feature/spm")),
         .package(url: "https://github.com/SDOSLabs/SDOSSwiftExtension.git", .branch("feature/spm"))
         

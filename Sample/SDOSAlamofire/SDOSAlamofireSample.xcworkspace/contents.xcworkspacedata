@@ -13,7 +13,4 @@
    <FileRef
       location = "group:DebugLibrary">
    </FileRef>
-   <FileRef
-      location = "group:../../../Japx">
-   </FileRef>
 </Workspace>
