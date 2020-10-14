@@ -10,6 +10,9 @@ import Foundation
 import SDOSAlamofire
 import Alamofire
 import SDOSKeyedCodable
+#if canImport(SDOSAlamofireJSONAPI)
+import SDOSAlamofireJSONAPI
+#endif
 
 typealias WSConfiguration = [ExampleSection]
 

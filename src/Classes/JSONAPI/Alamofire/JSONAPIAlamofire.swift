@@ -16,6 +16,9 @@ import JapxCore
 #if canImport(Japx)
 import Japx
 #endif
+#if canImport(SDOSAlamofire)
+import SDOSAlamofire
+#endif
 
 
 private let emptyDataStatusCodes: Set<Int> = [204, 205]

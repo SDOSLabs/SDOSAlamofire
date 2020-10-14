@@ -13,6 +13,9 @@ import JapxCodable
 #if canImport(Japx)
 import Japx
 #endif
+#if canImport(SDOSAlamofire)
+import SDOSAlamofire
+#endif
 
 public struct JSONAPI {
     public static let rootPath: String = "data"

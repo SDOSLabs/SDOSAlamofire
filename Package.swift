@@ -10,11 +10,14 @@ let package = Package(
     products: [
         .library(
             name: "SDOSAlamofire",
-            targets: ["SDOSAlamofire"])
+            targets: ["SDOSAlamofire"]),
+        .library(
+            name: "SDOSAlamofireJSONAPI",
+            targets: ["SDOSAlamofireJSONAPI"])
     ],
     dependencies: [
         .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.2.0")),
-//        .package(url: "https://github.com/SDOSLabs/Japx.git", .branch("feature/spm")),
+        //        .package(url: "https://github.com/SDOSLabs/Japx.git", .branch("feature/spm")),
         .package(path: "../Japx"),
         .package(url: "https://github.com/SDOSLabs/SDOSKeyedCodable.git", .branch("feature/spm")),
         .package(url: "https://github.com/SDOSLabs/SDOSSwiftExtension.git", .branch("feature/spm"))
@@ -26,9 +29,16 @@ let package = Package(
             dependencies: [
                 "Alamofire",
                 "SDOSKeyedCodable",
-                "SDOSSwiftExtension",
+                "SDOSSwiftExtension"
+            ],
+            path: "src/Classes/Core"),
+        .target(
+            name: "SDOSAlamofireJSONAPI",
+            dependencies: [
+                "SDOSAlamofire",
                 .product(name: "JapxCodable", package: "Japx")
             ],
-            path: "src")
+            path: "src/Classes/JSONAPI")
+        
     ]
 )
