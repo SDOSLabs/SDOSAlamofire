@@ -1,11 +1,11 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.3
 
 import PackageDescription
 
 let package = Package(
     name: "SDOSAlamofire",
     platforms: [
-       .iOS("10.0")
+        .iOS("10.0")
     ],
     products: [
         .library(
@@ -13,18 +13,21 @@ let package = Package(
             targets: ["SDOSAlamofire"])
     ],
     dependencies: [
-                .package(url: "https://github.com/Alamofire/Alamofire.git", .branch("5.0.0-beta.6")),
-                .package(url: "git@svrgitpub.sdos.es:iOS/SDOSKeyedCodable.git", .branch("feature/spm")),
-                .package(url: "git@svrgitpub.sdos.es:iOS/SDOSSwiftExtension.git", .branch("feature/spm"))
-
+        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.2.0")),
+//        .package(url: "https://github.com/SDOSLabs/Japx.git", .branch("feature/spm")),
+        .package(path: "../Japx"),
+        .package(url: "https://github.com/SDOSLabs/SDOSKeyedCodable.git", .branch("feature/spm")),
+        .package(url: "https://github.com/SDOSLabs/SDOSSwiftExtension.git", .branch("feature/spm"))
+        
     ],
     targets: [
         .target(
             name: "SDOSAlamofire",
             dependencies: [
-            "Alamofire",
-            "SDOSKeyedCodable",
-            "SDOSSwiftExtension"
+                "Alamofire",
+                "SDOSKeyedCodable",
+                "SDOSSwiftExtension",
+                .product(name: "JapxCodable", package: "Japx")
             ],
             path: "src")
     ]

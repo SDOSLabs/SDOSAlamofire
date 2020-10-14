@@ -8,7 +8,7 @@ inhibit_all_warnings!
 
 def shared_pods
     pod 'SDOSAlamofire/JSONAPI', :path => '../../', :inhibit_warnings => false
-  	pod 'OHHTTPStubs', '6.1.0'
+  	pod 'OHHTTPStubs', '9.0.0'
   	pod 'SDOSKeyedCodable'
 end
 

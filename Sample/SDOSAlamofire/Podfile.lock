@@ -1,26 +1,26 @@
 PODS:
-  - Alamofire (5.1.0)
+  - Alamofire (5.2.2)
   - Japx/Codable (3.0.0):
     - Japx/Core
   - Japx/Core (3.0.0)
-  - OHHTTPStubs (6.1.0):
-    - OHHTTPStubs/Default (= 6.1.0)
-  - OHHTTPStubs/Core (6.1.0)
-  - OHHTTPStubs/Default (6.1.0):
+  - OHHTTPStubs (9.0.0):
+    - OHHTTPStubs/Default (= 9.0.0)
+  - OHHTTPStubs/Core (9.0.0)
+  - OHHTTPStubs/Default (9.0.0):
     - OHHTTPStubs/Core
     - OHHTTPStubs/JSON
     - OHHTTPStubs/NSURLSession
     - OHHTTPStubs/OHPathHelpers
-  - OHHTTPStubs/JSON (6.1.0):
+  - OHHTTPStubs/JSON (9.0.0):
     - OHHTTPStubs/Core
-  - OHHTTPStubs/NSURLSession (6.1.0):
+  - OHHTTPStubs/NSURLSession (9.0.0):
     - OHHTTPStubs/Core
-  - OHHTTPStubs/OHPathHelpers (6.1.0)
-  - SDOSAlamofire/Core (0.10.1):
+  - OHHTTPStubs/OHPathHelpers (9.0.0)
+  - SDOSAlamofire/Core (1.0.0):
     - Alamofire (>= 5.1.0)
     - SDOSKeyedCodable (>= 1.1)
     - SDOSSwiftExtension
-  - SDOSAlamofire/JSONAPI (0.10.1):
+  - SDOSAlamofire/JSONAPI (1.0.0):
     - Alamofire (>= 5.1.0)
     - Japx/Codable
     - SDOSAlamofire/Core
@@ -34,7 +34,7 @@ PODS:
   - SDOSSwiftExtension/SwiftExtension (1.0.2)
 
 DEPENDENCIES:
-  - OHHTTPStubs (= 6.1.0)
+  - OHHTTPStubs (= 9.0.0)
   - SDOSAlamofire/JSONAPI (from `../../`)
   - SDOSKeyedCodable
 
@@ -52,13 +52,13 @@ EXTERNAL SOURCES:
     :path: "../../"
 
 SPEC CHECKSUMS:
-  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
   Japx: d1f7f3e4b94f2013538102e96cf96fd417005f76
-  OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
-  SDOSAlamofire: cba1d321b650a23135caf271876ec74551cede49
+  OHHTTPStubs: cb29d2a9d09a828ecb93349a2b0c64f99e0db89f
+  SDOSAlamofire: 62a667edcc20c1b1d44ee151175dd507dbe2d976
   SDOSKeyedCodable: c5ee2d84c5d0119f2a9a7060c2fd3b0eb4ab03c7
   SDOSSwiftExtension: 6f9bd03dd6c1a6a70b5f60cd7cc470790aee3625
 
-PODFILE CHECKSUM: 8e1881d24fa8c3bc023b553382f683af848f39e2
+PODFILE CHECKSUM: d7705ca52b3ff5596ff662b6950f1641d116125f
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.3

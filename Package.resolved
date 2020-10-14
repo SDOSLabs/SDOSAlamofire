@@ -5,26 +5,62 @@
         "package": "Alamofire",
         "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
         "state": {
-          "branch": "5.0.0-beta.6",
-          "revision": "163db02519e6f89dcbc57126bd5b17f729b81988",
+          "branch": null,
+          "revision": "becd9a729a37bdbef5bc39dc3c702b99f9e3d046",
+          "version": "5.2.2"
+        }
+      },
+      {
+        "package": "Japx",
+        "repositoryURL": "https://github.com/SDOSLabs/Japx.git",
+        "state": {
+          "branch": "feature/spm",
+          "revision": "023eeddb6aa799012ff7d11ee7c5427c1733a7d1",
           "version": null
         }
       },
       {
+        "package": "Moya",
+        "repositoryURL": "https://github.com/Moya/Moya.git",
+        "state": {
+          "branch": null,
+          "revision": "b3e5a233e0d85fd4d69f561c80988590859c7dee",
+          "version": "14.0.0"
+        }
+      },
+      {
+        "package": "ReactiveSwift",
+        "repositoryURL": "https://github.com/Moya/ReactiveSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "f195d82bb30e412e70446e2b4a77e1b514099e88",
+          "version": "6.1.0"
+        }
+      },
+      {
+        "package": "RxSwift",
+        "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "002d325b0bdee94e7882e1114af5ff4fe1e96afa",
+          "version": "5.1.1"
+        }
+      },
+      {
         "package": "SDOSKeyedCodable",
-        "repositoryURL": "git@svrgitpub.sdos.es:iOS/SDOSKeyedCodable.git",
+        "repositoryURL": "https://github.com/SDOSLabs/SDOSKeyedCodable.git",
         "state": {
           "branch": "feature/spm",
-          "revision": "eea828e6577506aece967f22fd794bdf3663e938",
+          "revision": "714c916de309ed53691c7875e5a80cd57d00d34f",
           "version": null
         }
       },
       {
         "package": "SDOSSwiftExtension",
-        "repositoryURL": "git@svrgitpub.sdos.es:iOS/SDOSSwiftExtension.git",
+        "repositoryURL": "https://github.com/SDOSLabs/SDOSSwiftExtension.git",
         "state": {
           "branch": "feature/spm",
-          "revision": "d8a7909ea1bbad888ec150bf55fce7111c9c8f4e",
+          "revision": "c53d88c58cdba9d6fc1d3ba343b1d3b3fd003cf4",
           "version": null
         }
       }

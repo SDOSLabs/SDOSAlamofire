@@ -7,7 +7,15 @@
 
 import Alamofire
 import Foundation
+#if canImport(JapxCodable)
+import JapxCodable
+#endif
+#if canImport(JapxCore)
+import JapxCore
+#endif
+#if canImport(Japx)
 import Japx
+#endif
 
 
 private let emptyDataStatusCodes: Set<Int> = [204, 205]

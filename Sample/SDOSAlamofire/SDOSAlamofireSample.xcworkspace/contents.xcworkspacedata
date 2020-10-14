@@ -7,4 +7,13 @@
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:../..">
+   </FileRef>
+   <FileRef
+      location = "group:DebugLibrary">
+   </FileRef>
+   <FileRef
+      location = "group:../../../Japx">
+   </FileRef>
 </Workspace>

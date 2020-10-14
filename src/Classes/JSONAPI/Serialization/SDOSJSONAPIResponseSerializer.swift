@@ -7,7 +7,12 @@
 
 import Foundation
 import Alamofire
+#if canImport(JapxCodable)
+import JapxCodable
+#endif
+#if canImport(Japx)
 import Japx
+#endif
 
 public struct JSONAPI {
     public static let rootPath: String = "data"

@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BD6B44BDC4396F9973E36CE /* Pods_SDOSAlamofireSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAF5702F6B4F065B043758E /* Pods_SDOSAlamofireSample.framework */; };
 		5C0FB1692223D81D00F4D291 /* Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5C0FB1672223D81D00F4D291 /* Shared.xcconfig */; };
 		5C4BBDAC220C22C200337368 /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4BBDAB220C22C200337368 /* UserDTO.swift */; };
 		5C4BBDB1220C23A700337368 /* MalformedJSON.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5C4BBDAF220C23A700337368 /* MalformedJSON.txt */; };
@@ -30,13 +31,38 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		710C18A7233BA2A700B7CBF9 /* JSONAPIDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710C18A6233BA2A700B7CBF9 /* JSONAPIDTO.swift */; };
 		7127BE24233CBDD2003097EF /* JSONAPI.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7127BE23233CBDD2003097EF /* JSONAPI.txt */; };
-		C6DE5A81A1DFE67E12754051 /* Pods_SDOSAlamofireSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6917474EE16C4B7CC0F00300 /* Pods_SDOSAlamofireSample.framework */; };
+		84390F382536D0F0000E2704 /* SDOSAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 84390F372536D0F0000E2704 /* SDOSAlamofire */; };
+		8453B4D62535885A00D700E2 /* DebugLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 8453B4D52535885A00D700E2 /* DebugLibrary */; };
+		84DE91D2253472D5004CE685 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4BBDBA220C274600337368 /* Constants.swift */; };
+		84DE91D3253472D5004CE685 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6228B2222D188E00032572 /* JSON.swift */; };
+		84DE91D4253472D5004CE685 /* InfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCCB7E12226B2D400F5DBD5 /* InfoModel.swift */; };
+		84DE91D5253472D5004CE685 /* JSONAPIDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710C18A6233BA2A700B7CBF9 /* JSONAPIDTO.swift */; };
+		84DE91D6253472D5004CE685 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCCB7D02225A31500F5DBD5 /* InitialViewController.swift */; };
+		84DE91D7253472D5004CE685 /* ExampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCCB7DC2226752F00F5DBD5 /* ExampleModel.swift */; };
+		84DE91D8253472D5004CE685 /* WS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCCB7DF222687CE00F5DBD5 /* WS.swift */; };
+		84DE91D9253472D5004CE685 /* ErrorDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCCB7CE2225975200F5DBD5 /* ErrorDTO.swift */; };
+		84DE91DA253472D5004CE685 /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4BBDAB220C22C200337368 /* UserDTO.swift */; };
+		84DE91DB253472D5004CE685 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ExampleViewController.swift */; };
+		84DE91DC253472D5004CE685 /* LoggingViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5F53AA2229223B00DD51B9 /* LoggingViewManager.m */; };
+		84DE91DD253472D5004CE685 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
+		84DE91DE253472D5004CE685 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCCB7D92226704100F5DBD5 /* InfoViewController.swift */; };
+		84DE91DF253472D5004CE685 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4BBDB4220C256600337368 /* Mock.swift */; };
+		84DE91E0253472D5004CE685 /* MALoggingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5F53AD2229223B00DD51B9 /* MALoggingViewController.m */; };
+		84DE91E4253472D5004CE685 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
+		84DE91E5253472D5004CE685 /* Example0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5C4BBDB0220C23A700337368 /* Example0.txt */; };
+		84DE91E6253472D5004CE685 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		84DE91E7253472D5004CE685 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5CCCB7D82225A4F800F5DBD5 /* Localizable.strings */; };
+		84DE91E8253472D5004CE685 /* MalformedJSON.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5C4BBDAF220C23A700337368 /* MalformedJSON.txt */; };
+		84DE91E9253472D5004CE685 /* JSONAPI.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7127BE23233CBDD2003097EF /* JSONAPI.txt */; };
+		84DE91EA253472D5004CE685 /* Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5C0FB1672223D81D00F4D291 /* Shared.xcconfig */; };
+		84DE91EB253472D5004CE685 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		29515D4F22A918270025550B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		29515D5022A918270025550B /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../../CHANGELOG.md; sourceTree = "<group>"; };
-		3E905E76770C2341312372CF /* Pods-SDOSAlamofireSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDOSAlamofireSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDOSAlamofireSample/Pods-SDOSAlamofireSample.release.xcconfig"; sourceTree = "<group>"; };
+		439260781FCE0915673136B9 /* Pods-SDOSAlamofireSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDOSAlamofireSample.release.xcconfig"; path = "Target Support Files/Pods-SDOSAlamofireSample/Pods-SDOSAlamofireSample.release.xcconfig"; sourceTree = "<group>"; };
+		46A145FE50B2E5DA8C9D34BB /* Pods-SDOSAlamofireSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDOSAlamofireSample.debug.xcconfig"; path = "Target Support Files/Pods-SDOSAlamofireSample/Pods-SDOSAlamofireSample.debug.xcconfig"; sourceTree = "<group>"; };
 		5C0FB1662223D81D00F4D291 /* App.debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = App.debug.xcconfig; sourceTree = "<group>"; };
 		5C0FB1672223D81D00F4D291 /* Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		5C0FB16A2223D84D00F4D291 /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
@@ -65,10 +91,10 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		6917474EE16C4B7CC0F00300 /* Pods_SDOSAlamofireSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDOSAlamofireSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		710C18A6233BA2A700B7CBF9 /* JSONAPIDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONAPIDTO.swift; sourceTree = "<group>"; };
 		7127BE23233CBDD2003097EF /* JSONAPI.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JSONAPI.txt; sourceTree = "<group>"; };
-		86C25FCD2133A9F9A082B31A /* Pods-SDOSAlamofireSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDOSAlamofireSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDOSAlamofireSample/Pods-SDOSAlamofireSample.debug.xcconfig"; sourceTree = "<group>"; };
+		84DE91F0253472D5004CE685 /* SDOSAlamofireSample-SPM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SDOSAlamofireSample-SPM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BAF5702F6B4F065B043758E /* Pods_SDOSAlamofireSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDOSAlamofireSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,22 +102,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6DE5A81A1DFE67E12754051 /* Pods_SDOSAlamofireSample.framework in Frameworks */,
+				3BD6B44BDC4396F9973E36CE /* Pods_SDOSAlamofireSample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84DE91E1253472D5004CE685 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84390F382536D0F0000E2704 /* SDOSAlamofire in Frameworks */,
+				8453B4D62535885A00D700E2 /* DebugLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4FB35BD6DBF7DCFDAC5EA28A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				86C25FCD2133A9F9A082B31A /* Pods-SDOSAlamofireSample.debug.xcconfig */,
-				3E905E76770C2341312372CF /* Pods-SDOSAlamofireSample.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		5C0B794A22117C1300969C30 /* DTO */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +250,14 @@
 			path = WS;
 			sourceTree = "<group>";
 		};
+		5F318FC273B1BF5AD064BF43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BAF5702F6B4F065B043758E /* Pods_SDOSAlamofireSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -231,8 +265,8 @@
 				29515D4F22A918270025550B /* README.md */,
 				607FACD21AFB9204008FA782 /* App */,
 				607FACD11AFB9204008FA782 /* Products */,
-				4FB35BD6DBF7DCFDAC5EA28A /* Pods */,
-				8412B7B234F553A3289AF173 /* Frameworks */,
+				98540EA54F4D92C683BA087E /* Pods */,
+				5F318FC273B1BF5AD064BF43 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -240,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD01AFB9204008FA782 /* SDOSAlamofireSample.app */,
+				84DE91F0253472D5004CE685 /* SDOSAlamofireSample-SPM.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -268,12 +303,13 @@
 			path = Configuration;
 			sourceTree = "<group>";
 		};
-		8412B7B234F553A3289AF173 /* Frameworks */ = {
+		98540EA54F4D92C683BA087E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6917474EE16C4B7CC0F00300 /* Pods_SDOSAlamofireSample.framework */,
+				46A145FE50B2E5DA8C9D34BB /* Pods-SDOSAlamofireSample.debug.xcconfig */,
+				439260781FCE0915673136B9 /* Pods-SDOSAlamofireSample.release.xcconfig */,
 			);
-			name = Frameworks;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,12 +319,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "SDOSAlamofireSample" */;
 			buildPhases = (
-				61787A5E5FC964CD98145BB8 /* [CP] Check Pods Manifest.lock */,
+				6E7BD5044E323DBF97BFDDEA /* [CP] Check Pods Manifest.lock */,
 				5CC7B7252243E7420034969C /* XcodeVersion */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				B37CB0C78BA33FE47BE2D998 /* [CP] Embed Pods Frameworks */,
+				29B6A558091E3B772B6DA18F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -297,6 +333,28 @@
 			name = SDOSAlamofireSample;
 			productName = SDOSAlamofire;
 			productReference = 607FACD01AFB9204008FA782 /* SDOSAlamofireSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84DE91CE253472D5004CE685 /* SDOSAlamofireSample-SPM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84DE91ED253472D5004CE685 /* Build configuration list for PBXNativeTarget "SDOSAlamofireSample-SPM" */;
+			buildPhases = (
+				84DE91D0253472D5004CE685 /* XcodeVersion */,
+				84DE91D1253472D5004CE685 /* Sources */,
+				84DE91E1253472D5004CE685 /* Frameworks */,
+				84DE91E3253472D5004CE685 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SDOSAlamofireSample-SPM";
+			packageProductDependencies = (
+				8453B4D52535885A00D700E2 /* DebugLibrary */,
+				84390F372536D0F0000E2704 /* SDOSAlamofire */,
+			);
+			productName = SDOSAlamofire;
+			productReference = 84DE91F0253472D5004CE685 /* SDOSAlamofireSample-SPM.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -313,6 +371,10 @@
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = Y5G9RYLF8Y;
 						LastSwiftMigration = 1010;
+						ProvisioningStyle = Manual;
+					};
+					84DE91CE253472D5004CE685 = {
+						DevelopmentTeam = Y5G9RYLF8Y;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -332,6 +394,7 @@
 			projectRoot = "";
 			targets = (
 				607FACCF1AFB9204008FA782 /* SDOSAlamofireSample */,
+				84DE91CE253472D5004CE685 /* SDOSAlamofireSample-SPM */,
 			);
 		};
 /* End PBXProject section */
@@ -352,9 +415,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		84DE91E3253472D5004CE685 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84DE91E4253472D5004CE685 /* Main.storyboard in Resources */,
+				84DE91E5253472D5004CE685 /* Example0.txt in Resources */,
+				84DE91E6253472D5004CE685 /* LaunchScreen.xib in Resources */,
+				84DE91E7253472D5004CE685 /* Localizable.strings in Resources */,
+				84DE91E8253472D5004CE685 /* MalformedJSON.txt in Resources */,
+				84DE91E9253472D5004CE685 /* JSONAPI.txt in Resources */,
+				84DE91EA253472D5004CE685 /* Shared.xcconfig in Resources */,
+				84DE91EB253472D5004CE685 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		29B6A558091E3B772B6DA18F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SDOSAlamofireSample/Pods-SDOSAlamofireSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SDOSAlamofireSample/Pods-SDOSAlamofireSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SDOSAlamofireSample/Pods-SDOSAlamofireSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5CC7B7252243E7420034969C /* XcodeVersion */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -373,7 +468,7 @@
 			shellPath = /bin/sh;
 			shellScript = "file=\"$SRCROOT/XcodeVersion.properties\"\n\n# create file if it does not exist\ntouch \"${file}\"\n\n# if file does not exist or it is not readable -> error\nif [ ! -r \"${file}\" ]\nthen\necho \"error: Could not create file: ${file} (see the Xcode Version script in Build Phases)\"\nerror -1\nfi\n# read the keys and values in the file\nwhile IFS='=' read -r key value\ndo\neval \"${key}='${value}'\"\ndone < \"${file}\"\n\n# if not defined the keys: XCODE_VERSION_MAJOR_REQUIRED, XCODE_VERSION_MINOR_REQUIRED, XCODE_VERSION_ACTUAL_REQUIRED\nif ([ -z ${XCODE_VERSION_MAJOR_REQUIRED:+\"1\"} ] || [ -z ${XCODE_VERSION_MINOR_REQUIRED:+\"1\"} ] || [ -z ${XCODE_VERSION_ACTUAL_REQUIRED:+\"1\"} ])\nthen\necho \"XCODE_VERSION_MAJOR_REQUIRED=${XCODE_VERSION_MAJOR}\" > \"${file}\"\necho \"XCODE_VERSION_MINOR_REQUIRED=${XCODE_VERSION_MINOR}\" >> \"${file}\"\necho \"XCODE_VERSION_ACTUAL_REQUIRED=${XCODE_VERSION_ACTUAL}\" >> \"${file}\"\n\necho \"warning: Required Xcode version set to ${XCODE_VERSION_ACTUAL} in this project. If you want to build this project with a different version of Xcode, please remove XcodeVersion.properties file\"\nelif [ ${XCODE_VERSION_MAJOR_REQUIRED} != ${XCODE_VERSION_MAJOR} ]\nthen\necho \"error: The required version of Xcode to run this project is ${XCODE_VERSION_MAJOR_REQUIRED} and the current version of Xcode is ${XCODE_VERSION_MAJOR}. If you want to build this project with a different version of Xcode, please remove XcodeVersion.properties file\"\nerror 0\nelif ([ ${XCODE_VERSION_MINOR_REQUIRED} != ${XCODE_VERSION_MINOR} ] || [ ${XCODE_VERSION_ACTUAL_REQUIRED} != ${XCODE_VERSION_ACTUAL} ])\nthen\necho \"warning: XCODE VERSION CONFLICT: The required version of Xcode to run this project is ${XCODE_VERSION_ACTUAL_REQUIRED} and the current version of Xcode is ${XCODE_VERSION_ACTUAL}. This might cause some problems at runtime.\"\nfi\n";
 		};
-		61787A5E5FC964CD98145BB8 /* [CP] Check Pods Manifest.lock */ = {
+		6E7BD5044E323DBF97BFDDEA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -395,33 +490,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B37CB0C78BA33FE47BE2D998 /* [CP] Embed Pods Frameworks */ = {
+		84DE91D0253472D5004CE685 /* XcodeVersion */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SDOSAlamofireSample/Pods-SDOSAlamofireSample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Japx/Japx.framework",
-				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
-				"${BUILT_PRODUCTS_DIR}/SDOSAlamofire/SDOSAlamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/SDOSKeyedCodable/SDOSKeyedCodable.framework",
-				"${BUILT_PRODUCTS_DIR}/SDOSSwiftExtension/SDOSSwiftExtension.framework",
+			inputFileListPaths = (
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+			);
+			name = XcodeVersion;
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Japx.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDOSAlamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDOSKeyedCodable.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDOSSwiftExtension.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SDOSAlamofireSample/Pods-SDOSAlamofireSample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "file=\"$SRCROOT/XcodeVersion.properties\"\n\n# create file if it does not exist\ntouch \"${file}\"\n\n# if file does not exist or it is not readable -> error\nif [ ! -r \"${file}\" ]\nthen\necho \"error: Could not create file: ${file} (see the Xcode Version script in Build Phases)\"\nerror -1\nfi\n# read the keys and values in the file\nwhile IFS='=' read -r key value\ndo\neval \"${key}='${value}'\"\ndone < \"${file}\"\n\n# if not defined the keys: XCODE_VERSION_MAJOR_REQUIRED, XCODE_VERSION_MINOR_REQUIRED, XCODE_VERSION_ACTUAL_REQUIRED\nif ([ -z ${XCODE_VERSION_MAJOR_REQUIRED:+\"1\"} ] || [ -z ${XCODE_VERSION_MINOR_REQUIRED:+\"1\"} ] || [ -z ${XCODE_VERSION_ACTUAL_REQUIRED:+\"1\"} ])\nthen\necho \"XCODE_VERSION_MAJOR_REQUIRED=${XCODE_VERSION_MAJOR}\" > \"${file}\"\necho \"XCODE_VERSION_MINOR_REQUIRED=${XCODE_VERSION_MINOR}\" >> \"${file}\"\necho \"XCODE_VERSION_ACTUAL_REQUIRED=${XCODE_VERSION_ACTUAL}\" >> \"${file}\"\n\necho \"warning: Required Xcode version set to ${XCODE_VERSION_ACTUAL} in this project. If you want to build this project with a different version of Xcode, please remove XcodeVersion.properties file\"\nelif [ ${XCODE_VERSION_MAJOR_REQUIRED} != ${XCODE_VERSION_MAJOR} ]\nthen\necho \"error: The required version of Xcode to run this project is ${XCODE_VERSION_MAJOR_REQUIRED} and the current version of Xcode is ${XCODE_VERSION_MAJOR}. If you want to build this project with a different version of Xcode, please remove XcodeVersion.properties file\"\nerror 0\nelif ([ ${XCODE_VERSION_MINOR_REQUIRED} != ${XCODE_VERSION_MINOR} ] || [ ${XCODE_VERSION_ACTUAL_REQUIRED} != ${XCODE_VERSION_ACTUAL} ])\nthen\necho \"warning: XCODE VERSION CONFLICT: The required version of Xcode to run this project is ${XCODE_VERSION_ACTUAL_REQUIRED} and the current version of Xcode is ${XCODE_VERSION_ACTUAL}. This might cause some problems at runtime.\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -445,6 +530,28 @@
 				5CCCB7DA2226704100F5DBD5 /* InfoViewController.swift in Sources */,
 				5C4BBDB5220C256600337368 /* Mock.swift in Sources */,
 				5C5F53AF2229223B00DD51B9 /* MALoggingViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84DE91D1253472D5004CE685 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84DE91D2253472D5004CE685 /* Constants.swift in Sources */,
+				84DE91D3253472D5004CE685 /* JSON.swift in Sources */,
+				84DE91D4253472D5004CE685 /* InfoModel.swift in Sources */,
+				84DE91D5253472D5004CE685 /* JSONAPIDTO.swift in Sources */,
+				84DE91D6253472D5004CE685 /* InitialViewController.swift in Sources */,
+				84DE91D7253472D5004CE685 /* ExampleModel.swift in Sources */,
+				84DE91D8253472D5004CE685 /* WS.swift in Sources */,
+				84DE91D9253472D5004CE685 /* ErrorDTO.swift in Sources */,
+				84DE91DA253472D5004CE685 /* UserDTO.swift in Sources */,
+				84DE91DB253472D5004CE685 /* ExampleViewController.swift in Sources */,
+				84DE91DC253472D5004CE685 /* LoggingViewManager.m in Sources */,
+				84DE91DD253472D5004CE685 /* AppDelegate.swift in Sources */,
+				84DE91DE253472D5004CE685 /* InfoViewController.swift in Sources */,
+				84DE91DF253472D5004CE685 /* Mock.swift in Sources */,
+				84DE91E0253472D5004CE685 /* MALoggingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,21 +681,25 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86C25FCD2133A9F9A082B31A /* Pods-SDOSAlamofireSample.debug.xcconfig */;
+			baseConfigurationReference = 46A145FE50B2E5DA8C9D34BB /* Pods-SDOSAlamofireSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = Y5G9RYLF8Y;
-				INFOPLIST_FILE = "$(SRCROOT)/App/Configuration/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				INFOPLIST_FILE = App/Configuration/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = es.sdos.sdosalamofire.dev;
@@ -603,14 +714,64 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E905E76770C2341312372CF /* Pods-SDOSAlamofireSample.release.xcconfig */;
+			baseConfigurationReference = 439260781FCE0915673136B9 /* Pods-SDOSAlamofireSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "$(SRCROOT)/App/Configuration/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				INFOPLIST_FILE = App/Configuration/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = es.sdos.sdosalamofire.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "App/SDOSAlamofireSample-Bridging-Header.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		84DE91EE253472D5004CE685 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Y5G9RYLF8Y;
+				INFOPLIST_FILE = App/Configuration/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = es.sdos.sdosalamofire.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "DEV Generic";
+				SWIFT_OBJC_BRIDGING_HEADER = "App/SDOSAlamofireSample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		84DE91EF253472D5004CE685 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = App/Configuration/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = es.sdos.sdosalamofire.dev;
@@ -643,7 +804,27 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		84DE91ED253472D5004CE685 /* Build configuration list for PBXNativeTarget "SDOSAlamofireSample-SPM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84DE91EE253472D5004CE685 /* Debug */,
+				84DE91EF253472D5004CE685 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84390F372536D0F0000E2704 /* SDOSAlamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SDOSAlamofire;
+		};
+		8453B4D52535885A00D700E2 /* DebugLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DebugLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
 }
