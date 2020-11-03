@@ -1,3 +1,8 @@
+## [HEAD]
+
+- Add support for Swift Package Manager
+- Separate support for JSONAPI in other repo: https://github.com/SDOSLabs/SDOSAlamofireJapx.git
+
 ## [1.0.0 Stable version](https://github.com/SDOSLabs/SDOSAlamofire/tree/v1.0.0)
 
 - Change dependency of Alamofire for use the stable version 5.1.0

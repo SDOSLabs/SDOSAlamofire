@@ -1,8 +1,5 @@
 PODS:
   - Alamofire (5.2.2)
-  - Japx/Codable (3.0.0):
-    - Japx/Core
-  - Japx/Core (3.0.0)
   - OHHTTPStubs (9.0.0):
     - OHHTTPStubs/Default (= 9.0.0)
   - OHHTTPStubs/Core (9.0.0)
@@ -16,14 +13,13 @@ PODS:
   - OHHTTPStubs/NSURLSession (9.0.0):
     - OHHTTPStubs/Core
   - OHHTTPStubs/OHPathHelpers (9.0.0)
-  - SDOSAlamofire/Core (1.0.0):
+  - SDOSAlamofire (1.0.0):
     - Alamofire (>= 5.1.0)
+    - SDOSAlamofire/Core (= 1.0.0)
     - SDOSKeyedCodable (>= 1.1)
     - SDOSSwiftExtension
-  - SDOSAlamofire/JSONAPI (1.0.0):
+  - SDOSAlamofire/Core (1.0.0):
     - Alamofire (>= 5.1.0)
-    - Japx/Codable
-    - SDOSAlamofire/Core
     - SDOSKeyedCodable (>= 1.1)
     - SDOSSwiftExtension
   - SDOSKeyedCodable (1.1.1):
@@ -35,13 +31,12 @@ PODS:
 
 DEPENDENCIES:
   - OHHTTPStubs (= 9.0.0)
-  - SDOSAlamofire/JSONAPI (from `../../`)
+  - SDOSAlamofire (from `../../`)
   - SDOSKeyedCodable
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
-    - Japx
     - OHHTTPStubs
   https://github.com/SDOSLabs/cocoapods-specs.git:
     - SDOSKeyedCodable
@@ -53,12 +48,11 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
-  Japx: d1f7f3e4b94f2013538102e96cf96fd417005f76
   OHHTTPStubs: cb29d2a9d09a828ecb93349a2b0c64f99e0db89f
-  SDOSAlamofire: 62a667edcc20c1b1d44ee151175dd507dbe2d976
+  SDOSAlamofire: 7e919212262c4e497f83613739e23761dd4ef192
   SDOSKeyedCodable: c5ee2d84c5d0119f2a9a7060c2fd3b0eb4ab03c7
   SDOSSwiftExtension: 6f9bd03dd6c1a6a70b5f60cd7cc470790aee3625
 
-PODFILE CHECKSUM: d7705ca52b3ff5596ff662b6950f1641d116125f
+PODFILE CHECKSUM: 48a50dae743cee7b8593722d7c69a41409d154e7
 
 COCOAPODS: 1.9.3
