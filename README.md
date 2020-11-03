@@ -28,8 +28,15 @@ SDOSAlamofire ofrece una capa de integración con [Alamofire](https://github.com
 
 ### Cocoapods
 
-Usaremos [CocoaPods](https://cocoapods.org). Hay que añadir la dependencia al `Podfile`:
+Usaremos [CocoaPods](https://cocoapods.org).
 
+Añadir el "source" privado de SDOSLabs al `Podfile`. Añadir también el "source" público de cocoapods para poder seguir instalando dependencias desde éste:
+```ruby
+source 'https://github.com/SDOSLabs/cocoapods-specs.git' #SDOSLabs source
+source 'https://github.com/CocoaPods/Specs.git' #Cocoapods source
+```
+
+Añadir la dependencia al `Podfile`:
 ```ruby
 pod 'SDOSAlamofire', '~>2.0.0' 
 ```
