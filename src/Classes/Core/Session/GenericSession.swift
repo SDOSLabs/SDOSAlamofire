@@ -6,6 +6,7 @@
 //
 
 import Alamofire
+import UIKit
 import SDOSSwiftExtension
 
 public extension HTTPHeader {

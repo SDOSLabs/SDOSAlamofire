@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "097e1f03166d49b31f824507fb85ad843b14fc13",
+          "version": "5.3.0"
+        }
+      },
+      {
+        "package": "OHHTTPStubs",
+        "repositoryURL": "https://github.com/AliSoftware/OHHTTPStubs.git",
+        "state": {
+          "branch": null,
+          "revision": "e92b5a5746ef16add2a1424f1fc19529d9a75cde",
+          "version": "9.0.0"
+        }
+      },
+      {
+        "package": "SDOSKeyedCodable",
+        "repositoryURL": "https://github.com/SDOSLabs/SDOSKeyedCodable.git",
+        "state": {
+          "branch": null,
+          "revision": "2ec8bd328a6648ee0bebe4dc59189a9f57d97b3d",
+          "version": "1.2.0"
+        }
+      },
+      {
+        "package": "SDOSSwiftExtension",
+        "repositoryURL": "https://github.com/SDOSLabs/SDOSSwiftExtension.git",
+        "state": {
+          "branch": null,
+          "revision": "8577b1e70d3f7cf5d0cf4de927a300ede14f0dfe",
+          "version": "1.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
