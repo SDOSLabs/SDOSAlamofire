@@ -85,9 +85,9 @@ Incluir la librería en el o los targets desados:
 SDOSAlamofire consta de:
 
 1. **`GenericSession`**: la subclase del tipo `Session` de Alamofire que deberemos usar para hacer las peticiones web. Únicamente añade los HTTP headers:
-    * `"device"`: enviando el modelo del dispositivo desde el que se realiza la petición. El valor que se envía es el devuelto por `UIDevice.current.deviceInformation` declarado en [SDOSSwiftExtension](	https://kc.sdos.es/x/DALLAQ)
-    * `"version"`: enviando la versión de iOS del dispositivo desde el que se realiza la petición. El valor que se envía es el devuelto por `UIApplication.version` declarado en [SDOSSwiftExtension](	https://kc.sdos.es/x/DALLAQ)
-    * `"Accept-Language"`: enviando el locale actual del dispositivo desde el que se realiza la petición. El valor que se envía es el devuelto por `Locale.currentLocale` declarado en [SDOSSwiftExtension](	https://kc.sdos.es/x/DALLAQ)
+    * `"device"`: enviando el modelo del dispositivo desde el que se realiza la petición. El valor que se envía es el devuelto por `UIDevice.current.deviceInformation` declarado en [SDOSSwiftExtension](https://github.com/SDOSLabs/SDOSSwiftExtension)
+    * `"version"`: enviando la versión de iOS del dispositivo desde el que se realiza la petición. El valor que se envía es el devuelto por `UIApplication.version` declarado en [SDOSSwiftExtension](https://github.com/SDOSLabs/SDOSSwiftExtension)
+    * `"Accept-Language"`: enviando el locale actual del dispositivo desde el que se realiza la petición. El valor que se envía es el devuelto por `Locale.currentLocale` declarado en [SDOSSwiftExtension](https://github.com/SDOSLabs/SDOSSwiftExtension)
 
     La instancia del `GenericSession` (o subclase) que utilicemos para realizar las peticiones web, **deberá guardarse en una variable** (generalmente en el objeto Repository):
     ```js
@@ -115,7 +115,7 @@ SDOSAlamofire consta de:
     /// Use this type to parse WS response errors of the legacy type HTTPResponseError
     public typealias GenericHTTPResponseErrorDTO = HTTPResponseErrorProtocol & Keyedable
     ```
-    Obsérvese que todos los tipos DTO deben implementar los protocolos `Decodable` y `Keyedable`. Para obtener más información sobre cómo implementar estos protocolos, véase [SDOSKeyedCodable](https://kc.sdos.es/x/FALLAQ).
+    Obsérvese que todos los tipos DTO deben implementar los protocolos `Decodable` y `Keyedable`. Para obtener más información sobre cómo implementar estos protocolos, véase [SDOSKeyedCodable](https://github.com/SDOSLabs/SDOSKeyedCodable).
 
     * **`GenericDTO`**: todos los objetos de parseo de respuesta deben implementar este tipo. 
 
@@ -361,15 +361,14 @@ AF.request(strURL, method: .post, parameters: parameters, encoding: JSONEncoding
 
 ## Dependencias
 
-* [Alamofire](https://github.com/Alamofire/Alamofire) - 5.1.0
-* [SDOSSwiftExtension](https://kc.sdos.es/x/DALLAQ)
+* [Alamofire](https://github.com/Alamofire/Alamofire) - ~> 5.3
+* [SDOSKeyedCodable](https://github.com/SDOSLabs/SDOSKeyedCodable) - ~> 1.2
+* [SDOSSwiftExtension](https://github.com/SDOSLabs/SDOSSwiftExtension) - ~> 1.1
 
 ## Referencias
 
 * [Alamofire](https://github.com/Alamofire/Alamofire)
-* [SDOSKeyedCodable](https://kc.sdos.es/x/FALLAQ)
 * [PromiseKit](https://github.com/mxcl/PromiseKit)
-* https://github.com/SDOSLabs/SDOSAlamofire
 
 # SDOSAlamofire+JSONAPI
 

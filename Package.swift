@@ -13,9 +13,9 @@ let package = Package(
             targets: ["SDOSAlamofire"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.2.0")),
-        .package(url: "https://github.com/SDOSLabs/SDOSKeyedCodable.git", .branch("feature/spm")),
-        .package(url: "https://github.com/SDOSLabs/SDOSSwiftExtension.git", .branch("feature/spm"))
+        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.3.0")),
+        .package(url: "https://github.com/SDOSLabs/SDOSKeyedCodable.git", .upToNextMajor(from: "1.2.0")),
+        .package(url: "https://github.com/SDOSLabs/SDOSSwiftExtension.git", .upToNextMajor(from: "1.1.0"))
         
     ],
     targets: [

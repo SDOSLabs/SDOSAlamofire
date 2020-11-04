@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
     spec.license      = { :type => 'MIT' }
     spec.homepage     = 'https://github.com/SDOSLabs/SDOSAlamofire'
     spec.summary      = 'Librería de integración con Alamofire'
-    spec.source       = { :git => "https://github.com/SDOSLabs/SDOSAlamofire.git", :tag => "v#{spec.version}" }
+    spec.source       = { :git => "https://github.com/SDOSLabs/SDOSAlamofire.git", :tag => "#{spec.version}" }
     spec.framework    = ['Foundation']
     spec.requires_arc = true
 
@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
         s1.source_files = ['src/Classes/Core/*{*.swift}', 'src/Classes/Core/**/*{*.swift}']
     end
 
-    spec.dependency 'Alamofire', '>= 5.1.0'
-    spec.dependency 'SDOSKeyedCodable', '>= 1.1'
-    spec.dependency 'SDOSSwiftExtension'
+    spec.dependency 'Alamofire', '~> 5.3'
+    spec.dependency 'SDOSKeyedCodable', '~> 1.2'
+    spec.dependency 'SDOSSwiftExtension', '~> 1.1'
 end

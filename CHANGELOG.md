@@ -1,4 +1,4 @@
-## [HEAD]
+## [2.0.0 Support for Swift Package Manager and separate JSONAPI](https://github.com/SDOSLabs/SDOSAlamofire/tree/v2.0.0)
 
 - Add support for Swift Package Manager
 - Separate support for JSONAPI in other repo: https://github.com/SDOSLabs/SDOSAlamofireJapx.git
