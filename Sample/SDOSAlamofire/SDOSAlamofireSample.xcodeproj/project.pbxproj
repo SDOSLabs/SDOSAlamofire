@@ -31,8 +31,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		710C18A7233BA2A700B7CBF9 /* JSONAPIDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710C18A6233BA2A700B7CBF9 /* JSONAPIDTO.swift */; };
 		7127BE24233CBDD2003097EF /* JSONAPI.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7127BE23233CBDD2003097EF /* JSONAPI.txt */; };
-		84390F382536D0F0000E2704 /* SDOSAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 84390F372536D0F0000E2704 /* SDOSAlamofire */; };
-		8453B4D62535885A00D700E2 /* DebugLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 8453B4D52535885A00D700E2 /* DebugLibrary */; };
+		84390F382536D0F0000E2704 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 84390F372536D0F0000E2704 /* SwiftPackageProductDependency */; };
+		8453B4D62535885A00D700E2 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 8453B4D52535885A00D700E2 /* SwiftPackageProductDependency */; };
 		84DE91D2253472D5004CE685 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4BBDBA220C274600337368 /* Constants.swift */; };
 		84DE91D3253472D5004CE685 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6228B2222D188E00032572 /* JSON.swift */; };
 		84DE91D4253472D5004CE685 /* InfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCCB7E12226B2D400F5DBD5 /* InfoModel.swift */; };
@@ -110,8 +110,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84390F382536D0F0000E2704 /* SDOSAlamofire in Frameworks */,
-				8453B4D62535885A00D700E2 /* DebugLibrary in Frameworks */,
+				84390F382536D0F0000E2704 /* BuildFile in Frameworks */,
+				8453B4D62535885A00D700E2 /* BuildFile in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,8 +350,8 @@
 			);
 			name = "SDOSAlamofireSample-SPM";
 			packageProductDependencies = (
-				8453B4D52535885A00D700E2 /* DebugLibrary */,
-				84390F372536D0F0000E2704 /* SDOSAlamofire */,
+				8453B4D52535885A00D700E2 /* SwiftPackageProductDependency */,
+				84390F372536D0F0000E2704 /* SwiftPackageProductDependency */,
 			);
 			productName = SDOSAlamofire;
 			productReference = 84DE91F0253472D5004CE685 /* SDOSAlamofireSample-SPM.app */;
@@ -438,12 +438,21 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SDOSAlamofireSample/Pods-SDOSAlamofireSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SDOSAlamofireSample/Pods-SDOSAlamofireSample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
+				"${BUILT_PRODUCTS_DIR}/SDOSAlamofire/SDOSAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDOSKeyedCodable/SDOSKeyedCodable.framework",
+				"${BUILT_PRODUCTS_DIR}/SDOSSwiftExtension/SDOSSwiftExtension.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SDOSAlamofireSample/Pods-SDOSAlamofireSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDOSAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDOSKeyedCodable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDOSSwiftExtension.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -816,11 +825,11 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		84390F372536D0F0000E2704 /* SDOSAlamofire */ = {
+		84390F372536D0F0000E2704 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SDOSAlamofire;
 		};
-		8453B4D52535885A00D700E2 /* DebugLibrary */ = {
+		8453B4D52535885A00D700E2 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DebugLibrary;
 		};
