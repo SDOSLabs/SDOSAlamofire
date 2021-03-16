@@ -1,3 +1,7 @@
+## [2.0.1Fix RequestModifier for get request](https://github.com/SDOSLabs/SDOSAlamofire/tree/v2.0.1)
+
+- Fix RequestModifier for get request
+
 ## [2.0.0 Support for Swift Package Manager and separate JSONAPI](https://github.com/SDOSLabs/SDOSAlamofire/tree/v2.0.0)
 
 - Add support for Swift Package Manager
