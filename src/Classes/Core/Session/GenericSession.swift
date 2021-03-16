@@ -55,7 +55,8 @@ open class GenericSession: Session {
                              parameters: parameters,
                              encoding: encoding,
                              headers: customizeHTTPHeaders(headers),
-                             interceptor: interceptor)
+                             interceptor: interceptor,
+                             requestModifier: requestModifier)
     }
     
     override open func request<Parameters: Encodable>(_ convertible: URLConvertible,
